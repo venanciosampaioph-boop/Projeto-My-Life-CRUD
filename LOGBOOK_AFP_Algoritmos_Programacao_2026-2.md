@@ -182,13 +182,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+Configurar o ambiente de desenvolvimento e iniciar a construção do projeto MyLife. Comecei utilizando Python e o VS Code para escrever e executar os códigos, além de criar um repositório no GitHub para armazenar o projeto e acompanhar suas alterações. A ideia do MyLife foi surgindo enquanto as aulas avançavam, conforme eu aprendia novos conceitos e identificava possibilidades de aplicação prática.
+Nesse primeiro momento, minha maior dificuldade estava em compreender como utilizar o Git e o GitHub, principalmente para registrar as alterações e enviar os arquivos ao repositório. Como ainda tinha pouco conhecimento dessas ferramentas, precisei de orientação para realizar essas operações. Com isso, comecei a entender a importância do controle de versão e de manter um histórico das mudanças realizadas no código.
+A configuração inicial permitiu dar os primeiros passos no desenvolvimento do MyLife. Como próximo passo, o objetivo passou a ser aplicar os conhecimentos de Python aprendidos nas aulas para construir as funcionalidades básicas do sistema.
 
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
