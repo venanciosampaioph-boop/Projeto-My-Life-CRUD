@@ -27,7 +27,7 @@
 | **Curso / Módulo** | Engenharia de Software · 2º período_ |
 | **Unidade curricular** | Algoritmos e Programação — UnDB 2026.2 |
 | **Professor** | Rondineli Seba Salomão |
-| **App-base do meu CRUD** | _ex.:um app de produtividade |
+| **App-base do meu CRUD** | um app de produtividade |
 | **Link do meu repositório** | https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD.git |
 | **Dupla de revisão (Campo 05)** |Pedro Lucas Pereira Rolim |
 | **Função neste ciclo** | Pedro Henrique Venancio Sampaio · Pedro Lucas Pereira Rolim |
