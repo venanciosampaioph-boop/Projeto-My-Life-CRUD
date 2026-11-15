@@ -109,7 +109,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Identificação | 16/11 | ✅ | ✅ |
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
-| 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
+| 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
@@ -182,10 +182,11 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-Configurar o ambiente de desenvolvimento e iniciar a construção do projeto MyLife. Comecei utilizando Python e o VS Code para escrever e executar os códigos, além de criar um repositório no GitHub para armazenar o projeto e acompanhar suas alterações. A ideia do MyLife foi surgindo enquanto as aulas avançavam, conforme eu aprendia novos conceitos e identificava possibilidades de aplicação prática.
-Nesse primeiro momento, minha maior dificuldade estava em compreender como utilizar o Git e o GitHub, principalmente para registrar as alterações e enviar os arquivos ao repositório. Como ainda tinha pouco conhecimento dessas ferramentas, precisei de orientação para realizar essas operações. Com isso, comecei a entender a importância do controle de versão e de manter um histórico das mudanças realizadas no código.
-A configuração inicial permitiu dar os primeiros passos no desenvolvimento do MyLife. Como próximo passo, o objetivo passou a ser aplicar os conhecimentos de Python aprendidos nas aulas para construir as funcionalidades básicas do sistema.
+O desafio deste ciclo foi configurar o ambiente de desenvolvimento e preparar as ferramentas necessárias para começar o projeto MyLife. Inicialmente, preparei o ambiente utilizando Python e VS Code. Também realizei a integração do Git com o VS Code e, posteriormente, conectei o projeto ao GitHub, para possibilitar o controle de versões e o armazenamento do código. Para isso, mobilizei conhecimentos sobre ferramentas de desenvolvimento, controle de versão e integração entre plataformas.
 
+Durante esse processo, minha principal dificuldade foi conseguir integrar o Git ao VS Code e depois conectar o projeto ao GitHub. Isso aconteceu porque eu ainda não tinha familiaridade com as configurações e os procedimentos necessários para estabelecer essas conexões. Para resolver o problema, utilizei o ChatGPT como apoio e segui o passo a passo fornecido para realizar as configurações. Não consultei uma documentação externa específica nessa etapa.
+
+Não recebi feedback do professor ou dos colegas durante esse ciclo, portanto, não realizei alterações motivadas por avaliações externas. Após concluir a configuração das ferramentas, meu próximo passo foi começar a desenvolver o MyLife em Python, colocando em prática os conhecimentos de lógica de programação e construindo as primeiras funcionalidades do sistema.
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
 <details>
