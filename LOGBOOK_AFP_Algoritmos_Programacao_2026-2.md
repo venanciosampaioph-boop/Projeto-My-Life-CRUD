@@ -182,11 +182,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-O desafio deste ciclo foi configurar o ambiente de desenvolvimento e preparar as ferramentas necessárias para começar o projeto MyLife. Inicialmente, preparei o ambiente utilizando Python e VS Code. Também realizei a integração do Git com o VS Code e, posteriormente, conectei o projeto ao GitHub, para possibilitar o controle de versões e o armazenamento do código. Para isso, mobilizei conhecimentos sobre ferramentas de desenvolvimento, controle de versão e integração entre plataformas.
-
-Durante esse processo, minha principal dificuldade foi conseguir integrar o Git ao VS Code e depois conectar o projeto ao GitHub. Isso aconteceu porque eu ainda não tinha familiaridade com as configurações e os procedimentos necessários para estabelecer essas conexões. Para resolver o problema, utilizei o ChatGPT como apoio e segui o passo a passo fornecido para realizar as configurações. Não consultei uma documentação externa específica nessa etapa.
-
-Não recebi feedback do professor ou dos colegas durante esse ciclo, portanto, não realizei alterações motivadas por avaliações externas. Após concluir a configuração das ferramentas, meu próximo passo foi começar a desenvolver o MyLife em Python, colocando em prática os conhecimentos de lógica de programação e construindo as primeiras funcionalidades do sistema.
+1.Configurar o ambiente de desenvolvimento e preparar as ferramentas para iniciar o MyLife.
+2.Preparei o ambiente com Python e VS Code, integrei o Git ao editor e conectei o projeto ao GitHub.
+3.Git, GitHub, VS Code, controle de versão e integração entre ferramentas.
+4.Tive dificuldade para integrar o Git ao VS Code e conectar o projeto ao GitHub, pois ainda não conhecia os procedimentos necessários para essas configurações.
+5.Utilizei o ChatGPT como apoio e segui o passo a passo fornecido para realizar as integrações.
+6.Não recebi feedback do professor ou dos colegas nessa etapa.
+7. Começar a desenvolver as funcionalidades do MyLife utilizando Python e os conhecimentos de lógica de programação.
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
 <details>
@@ -253,13 +255,14 @@ Minha hipótese inicial era que minhas principais dificuldades estariam relacion
 | _…_ | _…_ | _…_ |
 
 #### Registro do Ciclo 02 — 19/08
-O desafio deste ciclo foi desenvolver as primeiras funcionalidades do MyLife utilizando os conhecimentos de Python. Primeiro, montei o menu no terminal, apenas com sua parte visual. Depois, implementei as opções de adicionar e visualizar tarefas, excluir, sair do programa e alterar o estado da tarefa para concluída.
-
-Durante a implementação, utilizei variáveis, tipos de dados (str e bool), os comandos input() e print(), estruturas condicionais (if, elif e else) e o laço de repetição while. Minhas maiores dificuldades foram desenvolver as funções de excluir e concluir tarefas, principalmente por não conseguir organizar corretamente as condições necessárias para cada ação.
-
-Para resolver essas dificuldades, tentei reorganizar o código por conta própria e também utilizei o ChatGPT como apoio. Além disso, estudei conteúdos em vídeo sobre variáveis, tipos de dados, condições e laços de repetição, incluindo aulas de Gustavo Guanabara e outros materiais sobre Python.
-
-Após concluir as funcionalidades, testei as cinco opções do menu diretamente no terminal para verificar seu funcionamento. Não recebi feedback do professor ou dos colegas durante esse ciclo, então os ajustes foram feitos com base nas minhas próprias observações.
+1. Desenvolver as primeiras funcionalidades do MyLife utilizando os conhecimentos de Python.
+2. Criei o menu visual no terminal e implementei as opções de adicionar, visualizar e excluir tarefas, concluir tarefas e fechar o programa.
+Arquivo principal: CRUD.py.
+3. Variáveis, tipos de dados (str e bool), comandos input() e print(), estruturas condicionais (if, elif e else) e laços de repetição (while).
+4. Minhas maiores dificuldades foram implementar as funções de excluir e concluir tarefas. A principal causa foi a dificuldade em organizar as condições necessárias para cada ação.
+5. Tentei reorganizar o código por conta própria e utilizei o ChatGPT como apoio. Também estudei aulas sobre variáveis, tipos de dados, condições e laços de repetição, incluindo conteúdos de Gustavo Guanabara e outros materiais de Python
+6. Não recebi feedback do professor ou dos colegas. Realizei testes no terminal com as cinco opções do menu e fiz ajustes com base nas minhas próprias observações.
+7. Permitir o cadastro de várias tarefas, adicionar datas e horários para definir prazos e realizar refatorações para melhorar a organização do código.
 
 Como próximos passos, pretendo permitir o cadastro de várias tarefas, adicionar datas e horários para definir prazos e realizar algumas refatorações para melhorar a organização do código.
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
@@ -273,13 +276,13 @@ Como próximos passos, pretendo permitir o cadastro de várias tarefas, adiciona
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. Compreender os operadores, os tipos de dados e a representação da lógica de programação por meio de fluxogramas.
+2. Realizei exercícios utilizando operadores aritméticos, relacionais e lógicos. Também acompanhei aulas sobre tipos de dados e fluxogramas.
+3. Operadores aritméticos, relacionais e lógicos, tipos de dados e fluxogramas. Os fluxogramas ajudaram a visualizar a sequência das etapas de um programa e a representação das decisões
+4. Não encontrei dificuldades específicas nos exercícios com operadores, mas tive um pouco de dificuldade para compreender os fluxogramas e interpretar a representação das etapas e decisões de um programa.
+5. Para acompanhar os exercícios e entender melhor os conteúdos, utilizei os exemplos apresentados em sala e as explicações do professor. Em relação aos fluxogramas, busquei compreender a sequência lógica e a  representação das decisões por meio dos exemplos trabalhados durante a aula. Também considerei a sugestão do professor sobre o uso do try, que pretendo estudar melhor antes de aplicar no código.
+6. O professor apresentou a possibilidade de utilizar o try no código. Porém, ainda não compreendi completamente seu funcionamento, sendo necessário aprofundar esse conhecimento antes de aplicá-lo.
+7. Estudar as estruturas condicionais if, elif e else, compreendendo como utilizá-las para controlar o fluxo do programa.
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
