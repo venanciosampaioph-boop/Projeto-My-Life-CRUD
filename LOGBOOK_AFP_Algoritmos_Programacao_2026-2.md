@@ -108,7 +108,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 |:--:|---|---|:--:|:--:|
 | 1 | Identificação | 16/11 | ✅ | ✅ |
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
-| 1 | Campo 01 — Instrumento de entrada | 16/11 | ⬜ | ⬜ |
+| 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
@@ -192,10 +192,7 @@ A configuração inicial permitiu dar os primeiros passos no desenvolvimento do 
 <summary>📘 Orientações do Ciclo 02 — Campo 01 (sem consulta) e Campo 02 (pesquisa)</summary>
 
 **Campo 01 — Instrumento de entrada** · *sem consulta · faça primeiro*
- Quando comecei o MyLife, meu conhecimento era mais teórico, pois estava estudando lógica de programação e pensamento computacional. Já tinha conhecimentos básicos sobre variáveis, estruturas condicionais, tipos de dados e os comandos `print()` e `input()`. Também havia realizado exercícios envolvendo cálculo de média e resolução de problemas com a fórmula de Bhaskara.
- Naquele momento, minhas principais lacunas de aprendizagem estavam relacionadas à necessidade de aperfeiçoar meus conhecimentos sobre estruturas condicionais, aprender a utilizar laços de repetição e desenvolver a organização da lógica de programação para controlar as opções do menu.
- Minha hipótese inicial era que minhas maiores dificuldades seriam compreender a sintaxe do Python e desenvolver a lógica de programação necessária para organizar as instruções e fazer o sistema funcionar corretamente.
-
+ 
 **Campo 02 — Aprofundamento** · *AV Qualis · segunda 16/11, 23h59*
 - Preencha **depois do Campo 01, com pesquisa real**, e seja coerente com ele.
 - **2a.** Pelo menos **2 referências** (livro, documentação, vídeo, artigo), cada uma com a **contribuição** concreta para a sua solução. Não basta listar o título.
@@ -207,19 +204,19 @@ A configuração inicial permitiu dar os primeiros passos no desenvolvimento do 
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
-4. _…_ *(opcional)*
+1.Conhecimento básico sobre variáveis, compreendendo sua utilização para armazenar informações durante a execução de um programa.
+2.Uso básico sobre estruturas condicionais, utilizadas para controlar decisões e executar instruções de acordo com determinadas condições.
+3 Conhecia sobre tipos de dados e utilização dos comandos print() e input() para exibir informações e receber dados fornecidos pelo usuário.
+4.Experiência inicial com exercícios de lógica de programação, envolvendo cálculo de média e resolução de problemas com a fórmula de Bhaskara.
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1.Aperfeiçoar os conhecimentos sobre estruturas condicionais e compreender melhor sua aplicação na lógica do programa.
+2.Aprender a utilizar laços de repetição para executar instruções continuamente enquanto determinadas condições forem atendidas.
+3.Desenvolver a organização da lógica de programação para controlar corretamente as opções disponíveis no menu do MyLife.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+Minha hipótese inicial era que a principal dificuldade seria transformar os conhecimentos teóricos de lógica de programação em um programa funcional em Python. Esperava encontrar dificuldades para organizar as instruções e controlar as opções do menu, especialmente para permitir o cadastro e o gerenciamento de várias tarefas.
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
