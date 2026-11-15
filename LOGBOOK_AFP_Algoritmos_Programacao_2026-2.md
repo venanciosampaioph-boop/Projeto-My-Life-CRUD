@@ -225,20 +225,30 @@ Minha hipótese inicial era que a principal dificuldade seria transformar os con
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+Referência 1: Gustavo Guanabara — Curso Python #10: Condições (Parte 1), do canal Curso em Vídeo. Assistir ao vídeo.
 
+Contribuição: A aula ajudou a aprofundar meus conhecimentos sobre estruturas condicionais, principalmente o uso de if e else, permitindo compreender melhor como o programa pode tomar decisões de acordo com as opções escolhidas pelo usuário.
+
+Referência 2: Curso de Python para iniciantes #02: Variáveis e Tipos de dados. Assistir ao vídeo.
+
+Contribuição: Ajudou a reforçar meus conhecimentos sobre variáveis e tipos de dados, como texto (str) e booleano (bool), utilizados no MyLife para armazenar a tarefa e indicar se ela está concluída ou pendente.
+
+Referência 3: Lan Code — Loops em PYTHON sem enrolação pra facilitar sua vida (for e while). Assistir ao vídeo.
+
+Contribuição: Ajudou a compreender melhor os laços de repetição, principalmente o while, utilizado no MyLife para manter o menu em funcionamento até que o usuário escolha a opção de sair.
+
+Além dessas fontes, utilizei o ChatGPT como apoio para tirar dúvidas e compreender melhor alguns trechos do código, principalmente quando precisava entender como aplicar determinado conceito na prática.
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
 
-> _…_
+Minha hipótese inicial era que minhas principais dificuldades estariam relacionadas à compreensão da sintaxe do Python e ao desenvolvimento da lógica de programação. Após aprofundar meus conhecimentos sobre estruturas condicionais e estudar os laços de repetição, percebi uma melhora na compreensão desses conceitos e na organização das instruções do programa. Entretanto, conforme avançava no desenvolvimento do MyLife, novas dúvidas surgiam, mostrando que ainda precisava continuar estudando e praticando para aprimorar minha lógica de programação.
 
 **2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+|Estudo dos conteúdos | 2 a 3 dias | Assistir às aulas de forma gradual e praticar cada assunto antes de avançar para o próximo. |
+| Testes do programa | 5 opções do menu |Verificar o funcionamento das opções de adicionar, visualizar, concluir, excluir e sair. |
+|Arquivos do projeto |1 arquivo Python principal|Concentrar a lógica e as funcionalidades da primeira versão do MyLife. |
 | _…_ | _…_ | _…_ |
 
 #### Registro do Ciclo 02 — 19/08
