@@ -253,14 +253,15 @@ Minha hipótese inicial era que minhas principais dificuldades estariam relacion
 | _…_ | _…_ | _…_ |
 
 #### Registro do Ciclo 02 — 19/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+O desafio deste ciclo foi desenvolver as primeiras funcionalidades do MyLife utilizando os conhecimentos de Python. Primeiro, montei o menu no terminal, apenas com sua parte visual. Depois, implementei as opções de adicionar e visualizar tarefas, excluir, sair do programa e alterar o estado da tarefa para concluída.
 
+Durante a implementação, utilizei variáveis, tipos de dados (str e bool), os comandos input() e print(), estruturas condicionais (if, elif e else) e o laço de repetição while. Minhas maiores dificuldades foram desenvolver as funções de excluir e concluir tarefas, principalmente por não conseguir organizar corretamente as condições necessárias para cada ação.
+
+Para resolver essas dificuldades, tentei reorganizar o código por conta própria e também utilizei o ChatGPT como apoio. Além disso, estudei conteúdos em vídeo sobre variáveis, tipos de dados, condições e laços de repetição, incluindo aulas de Gustavo Guanabara e outros materiais sobre Python.
+
+Após concluir as funcionalidades, testei as cinco opções do menu diretamente no terminal para verificar seu funcionamento. Não recebi feedback do professor ou dos colegas durante esse ciclo, então os ajustes foram feitos com base nas minhas próprias observações.
+
+Como próximos passos, pretendo permitir o cadastro de várias tarefas, adicionar datas e horários para definir prazos e realizar algumas refatorações para melhorar a organização do código.
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
 
 <details>
