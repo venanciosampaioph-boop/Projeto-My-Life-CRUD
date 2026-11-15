@@ -107,7 +107,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | Grupo | Item | Prazo | Preenchido | Commit |
 |:--:|---|---|:--:|:--:|
 | 1 | Identificação | 16/11 | ✅ | ✅ |
-| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
+| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
@@ -297,13 +297,23 @@ Como próximos passos, pretendo permitir o cadastro de várias tarefas, adiciona
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1.Compreender e aplicar estruturas condicionais para controlar o funcionamento das opções do MyLife.
+2. A aula foi teórica. Em casa, pratiquei o conteúdo por meio de exercícios com o ChatGPT e, alguns dias depois, implementei as estruturas condicionais no MyLife. Utilizei essas condições para estabelecer regras de funcionamento nas opções do menu:
+
+Adicionar tarefa: impedir o cadastro de uma segunda tarefa enquanto já existir uma e não permitir tarefas vazias.
+
+Visualizar tarefa: verificar se existe uma tarefa cadastrada e identificar se está concluída ou pendente.
+
+Concluir tarefa: impedir a conclusão de uma tarefa inexistente ou que já esteja concluída.
+
+Excluir tarefa: verificar se existe uma tarefa antes de permitir sua exclusão.
+
+Menu: identificar opções inválidas e encerrar o programa quando o usuário escolher sair.
+3. Estruturas condicionais (if, elif e else), condições aninhadas e controle do fluxo de execução do programa.
+4. Tive bastante dificuldade para organizar o posicionamento e o encadeamento das condicionais, principalmente para evitar que uma condição interferisse na outra. A dificuldade estava relacionada à organização da lógica e à estrutura dos blocos condicionais. Posteriormente, ao integrar os laços de repetição, essa dificuldade ficou ainda mais evidente. Esse problema específico não estava previsto no dimensionamento inicial do Campo 02. Não trabalhei com um lote de dados defeituoso nesta etapa.
+5. Inicialmente, tentei corrigir os problemas sozinho, reorganizando as condições. Consegui resolver algumas partes, mas precisei utilizar o ChatGPT como apoio para compreender e ajustar outras. Também utilizei os exercícios práticos de condicionais como forma de reforçar o conteúdo, além da aula de Gustavo Guanabara, do canal Curso em Vídeo, sobre condições em Python.
+6. Não recebi feedback específico do professor ou dos colegas. Realizei testes no terminal com as opções do menu e fiz ajustes com base nos resultados observados.
+7. Estudar e aplicar os laços de repetição no MyLife, buscando melhorar o funcionamento do programa e permitir que o menu continue em execução até que o usuário escolha sair.
 
 ---
 
