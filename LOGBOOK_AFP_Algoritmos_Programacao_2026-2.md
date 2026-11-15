@@ -192,11 +192,9 @@ A configuração inicial permitiu dar os primeiros passos no desenvolvimento do 
 <summary>📘 Orientações do Ciclo 02 — Campo 01 (sem consulta) e Campo 02 (pesquisa)</summary>
 
 **Campo 01 — Instrumento de entrada** · *sem consulta · faça primeiro*
-- Preencha **antes de tudo**, em um bloco contínuo de cerca de 15 minutos, sem internet, sem material, sem IA e sem colegas, depois de conhecer a questão-problema e a primeira amostra de dados do seu app. Depois do Campo 01 você pode consultar o que quiser.
-- **1a.** Liste pelo menos **3 objetos de conhecimento** que você acha que precisa dominar para resolver o problema. Use o vocabulário técnico da área. *Não precisa acertar tudo — o Campo 07 vai mostrar o quanto você evoluiu.*
-- **1b.** Liste pelo menos **3 lacunas**: o que você **não sabe** e precisa descobrir, com precisão (ruim: "não sei programar"; bom: "não sei como validar a entrada para impedir que o usuário digite texto onde espero número").
-- **1c.** Escreva sua **hipótese inicial** em até 5 linhas: o que você acha que está causando as falhas do CRUD e por quê.
-- Faça o commit **logo ao terminar**. Depois, **não edite** o Campo 01.
+ Quando comecei o MyLife, meu conhecimento era mais teórico, pois estava estudando lógica de programação e pensamento computacional. Já tinha conhecimentos básicos sobre variáveis, estruturas condicionais, tipos de dados e os comandos `print()` e `input()`. Também havia realizado exercícios envolvendo cálculo de média e resolução de problemas com a fórmula de Bhaskara.
+ Naquele momento, minhas principais lacunas de aprendizagem estavam relacionadas à necessidade de aperfeiçoar meus conhecimentos sobre estruturas condicionais, aprender a utilizar laços de repetição e desenvolver a organização da lógica de programação para controlar as opções do menu.
+ Minha hipótese inicial era que minhas maiores dificuldades seriam compreender a sintaxe do Python e desenvolver a lógica de programação necessária para organizar as instruções e fazer o sistema funcionar corretamente.
 
 **Campo 02 — Aprofundamento** · *AV Qualis · segunda 16/11, 23h59*
 - Preencha **depois do Campo 01, com pesquisa real**, e seja coerente com ele.
