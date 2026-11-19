@@ -1,9 +1,7 @@
 
 print("===== MyLife 1.0 =====")
 
-tarefa = ""
-concluida = False
-
+tarefas = []
 while True:
     print("\n===== MENU =====")
     print("1 - Adicionar tarefa")
@@ -15,24 +13,22 @@ while True:
     opcao = input("Escolha uma opção: ")
 
     if opcao == "1":
-        if tarefa != "":
-            print("Já existe uma tarefa cadastrada.")
-        else:
-            tarefa = input("Digite sua tarefa: ")
+       
+        descriçao = input("Digite sua tarefa: ")
 
-            if tarefa == "":
-                print("A tarefa não pode estar vazia.")
-            else:
-                concluida = False
+        if descriçao == "":
+             print("A tarefa não pode estar vazia.")
+        else:
+                tarefas.append(descriçao)
                 print("Tarefa adicionada com sucesso!")
 
     elif opcao == "2":
-        if tarefa == "":
+        if tarefas == []:
             print("Nenhuma tarefa cadastrada.")
-        elif concluida == True:
-            print("Tarefa:", tarefa, "- Concluída")
+       
         else:
-            print("Tarefa:", tarefa, "- Pendente")
+            for descriçao in tarefas:
+                print("Tarefa:", descriçao)
 
     elif opcao == "3":
         if tarefa == "":
