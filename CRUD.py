@@ -2,6 +2,7 @@
 print("===== MyLife 1.0 =====")
 
 tarefas = []
+tarefas_concluidas = []
 while True:
     print("\n===== MENU =====")
     print("1 - Adicionar tarefa")
@@ -27,20 +28,28 @@ while True:
             print("Nenhuma tarefa cadastrada.")
        
         else:
-            for descriçao in tarefas:
-                print("Tarefa:", descriçao)
+            for indice, descriçao in enumerate(tarefas, start=1):
+                    print(indice, "-", descriçao)
 
     elif opcao == "3":
-        if tarefa == "":
+        if tarefas == []:
             print("Nenhuma tarefa cadastrada.")
-        elif concluida == True:
-            print("Essa tarefa já foi concluída.")
         else:
-            concluida = True
-            print("Tarefa concluída com sucesso!")
+            for indice, descriçao in enumerate(tarefas, start=1):
+                 print(indice, "-", descriçao)
+
+            escolha = int(input("Escolha a tarefa que deseja concluir (digite o número): "))
+            if escolha < 1 or escolha > len(tarefas):
+             print("Opção inválida!")
+            elif escolha in tarefas_concluidas:
+             print("Essa tarefa já foi concluída.")
+            else:
+             tarefas_concluidas.append(escolha)
+             print("Tarefa concluída com sucesso!")
+            
 
     elif opcao == "4":
-        if tarefa == "":
+        if tarefas == []:
             print("Nenhuma tarefa para excluir.")
         else:
             tarefa = ""
