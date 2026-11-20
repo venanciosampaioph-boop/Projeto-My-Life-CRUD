@@ -44,7 +44,7 @@ while True:
             elif escolha in tarefas_concluidas:
              print("Essa tarefa já foi concluída.")
             else:
-             tarefas_concluidas.append(escolha)
+             tarefas_concluidas.append(tarefas[escolha - 1])
              print("Tarefa concluída com sucesso!")
             
 
@@ -52,9 +52,14 @@ while True:
         if tarefas == []:
             print("Nenhuma tarefa para excluir.")
         else:
-            tarefa = ""
-            concluida = False
-            print("Tarefa excluída com sucesso!")
+            for indice, descriçao in enumerate(tarefas, start=1):
+                print(indice, "-", descriçao)
+            escolha = int(input("Digite o número da tarefa que deseja excluir: "))
+            if escolha <1 or escolha > len(tarefas):
+                    print("Opção inválida!")
+            else:
+                    tarefas.pop(escolha - 1)
+                    print("Tarefa excluída com sucesso!")
 
     elif opcao == "5":
         print("Encerrando o MyLife...")
