@@ -471,11 +471,15 @@ Ao cadastrar uma tarefa e visualizá-la, o programa mostrava sua descrição e s
 
 Repositório: https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD
 3. Utilizei estruturas condicionais (if, elif e else), condicionais aninhadas, comparações e variáveis booleanas. As condições permitiam verificar se uma tarefa estava cadastrada e se havia sido concluída. Nessa versão, utilizei condições simples e não precisei combinar os operadores lógicos and, or e not.
+
 4. Minha principal dificuldade foi a indentação das estruturas condicionais. Em alguns momentos, o else ficava associado ao if errado, fazendo com que o programa executasse uma ação diferente da esperada. Isso acontecia porque eu ainda tinha dificuldade em organizar corretamente os blocos de código.
+
 5. Tentei corrigir os erros ajustando a indentação por conta própria. Quando não conseguia identificar o problema, recorria ao ChatGPT para pedir ajuda e entender o que estava errado. Utilizei as explicações como apoio para fazer os ajustes no meu próprio código, buscando compreender a lógica em vez de apenas copiar a solução.
 
 Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e estruturas condicionais.
+
 6. A partir das explicações recebidas durante as correções, consegui compreender melhor como a indentação organiza as estruturas condicionais e determina quais comandos pertencem a cada bloco. Passei a prestar mais atenção na posição dos comandos e a identificar melhor os erros, embora ainda precisasse de ajuda em algumas situações.
+
 7. Continuar praticando estruturas condicionais e melhorar a organização do código, principalmente a indentação, para evitar erros e garantir que cada opção do menu execute corretamente.
 
 ## 🟠 CICLO 06 — 30/09 — Devolutiva da P1 + repetição: `for`, `while`, `break`, `continue`
