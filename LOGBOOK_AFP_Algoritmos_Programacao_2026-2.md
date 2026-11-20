@@ -182,12 +182,12 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-1.Configurar o ambiente de desenvolvimento e preparar as ferramentas para iniciar o MyLife.
-2.Preparei o ambiente com Python e VS Code, integrei o Git ao editor e conectei o projeto ao GitHub.
-3.Git, GitHub, VS Code, controle de versão e integração entre ferramentas.
-4.Tive dificuldade para integrar o Git ao VS Code e conectar o projeto ao GitHub, pois ainda não conhecia os procedimentos necessários para essas configurações.
-5.Utilizei o ChatGPT como apoio e segui o passo a passo fornecido para realizar as integrações.
-6.Não recebi feedback do professor ou dos colegas nessa etapa.
+1. Configurar o ambiente de desenvolvimento e preparar as ferramentas para iniciar o MyLife.
+2. Preparei o ambiente com Python e VS Code, integrei o Git ao editor e conectei o projeto ao GitHub.
+3. Git, GitHub, VS Code, controle de versão e integração entre ferramentas.
+4. Tive dificuldade para integrar o Git ao VS Code e conectar o projeto ao GitHub, pois ainda não conhecia os procedimentos necessários para essas configurações.
+5. Utilizei o ChatGPT como apoio e segui o passo a passo fornecido para realizar as integrações.
+6. Não recebi feedback do professor ou dos colegas nessa etapa.
 7. Começar a desenvolver as funcionalidades do MyLife utilizando Python e os conhecimentos de lógica de programação.
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
@@ -456,13 +456,27 @@ Menu: identificar opções inválidas e encerrar o programa quando o usuário es
 </details>
 
 #### Registro do Ciclo 05 — 09/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. Organizar as estruturas condicionais do MyLife para que cada opção do menu executasse a ação correta, verificando também a existência e o estado da tarefa.
+2. Implementei a primeira versão do MyLife, permitindo cadastrar, visualizar, concluir e excluir uma tarefa. Utilizei o arquivo CRUD.py, com duas variáveis principais:
+
+tarefa = "": armazenava a descrição da tarefa.
+
+concluida = False: indicava se a tarefa estava pendente ou concluída.
+
+Evidências de funcionamento:
+
+Ao tentar visualizar sem cadastrar uma tarefa, o programa exibia uma mensagem informando que não havia tarefa cadastrada.
+
+Ao cadastrar uma tarefa e visualizá-la, o programa mostrava sua descrição e se estava pendente ou concluída.
+
+Repositório: https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD
+3. Utilizei estruturas condicionais (if, elif e else), condicionais aninhadas, comparações e variáveis booleanas. As condições permitiam verificar se uma tarefa estava cadastrada e se havia sido concluída. Nessa versão, utilizei condições simples e não precisei combinar os operadores lógicos and, or e not.
+4. Minha principal dificuldade foi a indentação das estruturas condicionais. Em alguns momentos, o else ficava associado ao if errado, fazendo com que o programa executasse uma ação diferente da esperada. Isso acontecia porque eu ainda tinha dificuldade em organizar corretamente os blocos de código.
+5. Tentei corrigir os erros ajustando a indentação por conta própria. Quando não conseguia identificar o problema, recorria ao ChatGPT para pedir ajuda e entender o que estava errado. Utilizei as explicações como apoio para fazer os ajustes no meu próprio código, buscando compreender a lógica em vez de apenas copiar a solução.
+
+Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e estruturas condicionais.
+6. A partir das explicações recebidas durante as correções, consegui compreender melhor como a indentação organiza as estruturas condicionais e determina quais comandos pertencem a cada bloco. Passei a prestar mais atenção na posição dos comandos e a identificar melhor os erros, embora ainda precisasse de ajuda em algumas situações.
+7. Continuar praticando estruturas condicionais e melhorar a organização do código, principalmente a indentação, para evitar erros e garantir que cada opção do menu execute corretamente.
 
 ## 🟠 CICLO 06 — 30/09 — Devolutiva da P1 + repetição: `for`, `while`, `break`, `continue`
 
