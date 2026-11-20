@@ -41,7 +41,7 @@ while True:
             escolha = int(input("Escolha a tarefa que deseja concluir (digite o número): "))
             if escolha < 1 or escolha > len(tarefas):
              print("Opção inválida!")
-            elif escolha in tarefas_concluidas:
+            elif tarefas[escolha - 1] in tarefas_concluidas:
              print("Essa tarefa já foi concluída.")
             else:
              tarefas_concluidas.append(tarefas[escolha - 1])
