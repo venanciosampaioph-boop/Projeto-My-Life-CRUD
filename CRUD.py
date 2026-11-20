@@ -29,23 +29,38 @@ while True:
        
         else:
             for indice, descriçao in enumerate(tarefas, start=1):
+                if descriçao not in tarefas_concluidas:    
                     print(indice, "-", descriçao)
+            if tarefas_concluidas:
+                print("\n====TAREFAS CONCLUIDAS====")
+                for indice, descriçao in enumerate(tarefas_concluidas, start=1):
+                    print(indice, "-", descriçao)
+
 
     elif opcao == "3":
         if tarefas == []:
             print("Nenhuma tarefa cadastrada.")
         else:
-            for indice, descriçao in enumerate(tarefas, start=1):
-                 print(indice, "-", descriçao)
+             tarefas_pendentes = []
 
-            escolha = int(input("Escolha a tarefa que deseja concluir (digite o número): "))
-            if escolha < 1 or escolha > len(tarefas):
-             print("Opção inválida!")
-            elif tarefas[escolha - 1] in tarefas_concluidas:
-             print("Essa tarefa já foi concluída.")
-            else:
-             tarefas_concluidas.append(tarefas[escolha - 1])
-             print("Tarefa concluída com sucesso!")
+             contador = 1
+
+             for descricao in tarefas:
+                 if descricao not in tarefas_concluidas:
+                     tarefas_pendentes.append(descricao)
+                     print(contador, "-", descricao)
+                     contador += 1
+
+             if tarefas_pendentes == []:
+               print("Todas as tarefas já foram concluídas.")
+             else:
+                escolha = int(input("Escolha a tarefa que deseja concluir (digite o número): "))
+
+                if escolha < 1 or escolha > len(tarefas_pendentes):
+                   print("Opção inválida!")
+                else:
+                     tarefas_concluidas.append(tarefas_pendentes[escolha - 1])
+                     print("Tarefa concluída com sucesso!")
             
 
     elif opcao == "4":
