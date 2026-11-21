@@ -514,13 +514,13 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 07 — 07/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. Aprender a utilizar listas para armazenar e gerenciar várias tarefas no MyLife, entendendo como adicionar, visualizar e excluir seus elementos.
+2. Modifiquei o MyLife para trabalhar com várias tarefas em vez de armazenar apenas uma. Para isso, utilizei a lista tarefas = [], permitindo cadastrar novas tarefas com .append(), visualizar os elementos e excluir tarefas com .pop().
+3. Estruturas de dados do tipo lista, armazenamento de múltiplos elementos, índices, iteração com for, operações .append() e .pop(), função len() e enumerate().
+4. Minha principal dificuldade foi compreender como os índices funcionavam dentro da lista. Cada tarefa ocupava uma posição, começando pelo índice 0, enquanto a numeração apresentada no menu começava em 1. No início, tive um pouco de dificuldade para entender essa diferença e como utilizar escolha - 1 para acessar a tarefa correta. Não identifiquei erros de acesso a índices inexistentes, mas ainda existem trechos do código que consigo utilizar sem compreender completamente seu funcionamento.
+5. Utilizei os índices para relacionar a numeração escolhida pelo usuário à posição correta da tarefa na lista. Também utilizei len(tarefas) para verificar se a opção escolhida estava dentro da quantidade de tarefas cadastradas. Para aprender, acompanhei videoaulas, utilizei as explicações do ChatGPT e resolvi exercícios práticos.
+6. *Não recebi feedback do professor ou dos colegas sobre o uso das listas. As principais melhorias foram realizadas por meio dos meus próprios testes e exercícios.
+7. Continuar praticando listas e aprofundar a compreensão dos comandos utilizados, principalmente a iteração com for, os índices e as operações de manipulação dos elementos, para conseguir desenvolver estruturas um pouco mais complexas com maior autonomia.
 
 ## 🟠 CICLO 08 — 14/10 — Busca/consulta e introdução a dicionários e matrizes
 
@@ -535,15 +535,14 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 08 — 14/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. Compreender a utilização de dicionários para organizar as informações de cada tarefa no MyLife e aprender a acessar e modificar seus valores por meio das chaves.
+2. Utilizei dicionários dentro da lista tarefas para armazenar as informações de cada tarefa. Cada dicionário possui as chaves descricao e status, permitindo guardar o nome da tarefa e sua situação. Também implementei a consulta das tarefas cadastradas e a filtragem das tarefas pendentes.
+3. Listas, dicionários, estruturas de chave e valor, acesso e alteração de valores por meio de chaves, estruturas condicionais e filtragem de elementos.
+4. Durante o desenvolvimento, encontrei um erro KeyError: 'status'. Ao analisar o código, percebi que havia escrito a chave como "Stattus" no momento de cadastrar a tarefa, enquanto tentava acessá-la como "status" em outra parte do programa. Como os nomes das chaves precisam corresponder exatamente, o Python não conseguiu encontrar a informação. Corrigi a escrita e o erro foi resolvido.
+5. Decidi revisar a estrutura do dicionário e verificar a escrita das chaves utilizadas no código. Com a ajuda das explicações do ChatGPT e da análise do próprio código, identifiquei o erro e corrigi a chave. Depois, executei o programa novamente e testei as funcionalidades de visualizar, concluir e excluir tarefas para verificar se estavam funcionando corretamente.
+6. Recebi ajuda do ChatGPT durante a identificação do erro. A orientação foi verificar como os dados estavam armazenados e comparar os nomes das chaves cadastradas com os nomes utilizados no acesso. A partir disso, consegui identificar a escrita incorreta e fazer a correção. Também compreendi melhor a importância de manter os nomes das chaves consistentes.
+7. Continuar praticando dicionários e listas, buscando compreender melhor como organizar informações e acessar seus valores. Também pretendo desenvolver maior autonomia para identificar e corrigir erros no código.
 
----
 
 # 🔵 GRUPO 3 — prazo quinta 26/11 às 23h59
 
