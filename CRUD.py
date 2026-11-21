@@ -1,5 +1,5 @@
 
-print("===== MyLife 1.0 =====")
+print("===== MyLife 2.0 =====")
 
 tarefas = []
 
