@@ -494,13 +494,13 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 06 — 30/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. Compreender e aplicar os laços de repetição no MyLife, principalmente o while e o break, entendendo como controlar a execução do menu.
+2. Na versão básica do MyLife, utilizei o while para manter o menu funcionando continuamente e o break para encerrar o programa quando o usuário escolhesse a opção de sair. Nessa versão, ainda não utilizei o for nem o continue.
+3. Laços de repetição (while e for), comando break, controle do fluxo de execução e iteração. O for foi utilizado posteriormente, quando comecei a trabalhar com listas e várias tarefas.
+4. Não tive grandes dificuldades com o while e o break, e não encontrei problemas de loop infinito. Minha maior dificuldade apareceu quando comecei a utilizar o for para percorrer as tarefas de uma lista. No início, tive dificuldade para entender como o laço acessava cada tarefa durante a repetição.
+5. Primeiro tentei implementar o for sozinho, mas, como não estava conseguindo fazer funcionar corretamente, procurei identificar o problema e depois pedi ajuda ao ChatGPT. Também utilizei os materiais das aulas e pratiquei no próprio código. Com as explicações, consegui entender melhor o funcionamento do laço e aplicar a correção.
+6. *Ainda não recebi a devolutiva da P1, portanto não tenho como registrar os erros apontados pelo professor. O que foi descrito neste item está relacionado principalmente à minha experiência com o desenvolvimento do MyLife e ao aprendizado dos laços de repetição, não à avaliação da P1. Durante essa etapa, consegui compreender melhor como o for percorre os elementos de uma lista, embora ainda não me sentisse totalmente seguro para utilizá-lo sozinho.
+7. Continuar praticando os laços de repetição, principalmente o for, para ganhar mais segurança ao percorrer listas e manipular várias tarefas no MyLife.
 
 ## 🟠 CICLO 07 — 07/10 — Listas: armazenamento e iteração
 
