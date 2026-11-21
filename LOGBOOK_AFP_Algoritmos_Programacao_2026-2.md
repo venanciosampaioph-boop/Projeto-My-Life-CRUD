@@ -110,10 +110,10 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
-| 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
+| 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ✅ | ✅ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
-| 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
-| 2 | Campo 04 — Interação com IA | 21/11 | ⬜ | ⬜ |
+| 2 | Campo 03 — Execução e desvios | 21/11 | ✅ | ✅ |
+| 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
 | 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 05 — Revisão por pares nº 1 e nº 2 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 06 — Próximos passos | 26/11 | ⬜ | ⬜ |
@@ -406,43 +406,42 @@ Menu: identificar opções inválidas e encerrar o programa quando o usuário es
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59*
 
 **3a. O que descobri que mudou minha compreensão do problema (mínimo 2 achados, com objeto de conhecimento associado):**
-1. _…_ — *Objeto de conhecimento:* _…_
-2. _…_ — *Objeto de conhecimento:* _…_
-3. _…_ *(opcional)*
-
+1. Percebi que as listas permitem armazenar várias tarefas, mas que os dicionários tornam possível organizar informações diferentes para cada tarefa, como descrição e status. — Objeto de conhecimento: listas, dicionários e estruturas de chave e valor.
+2. Descobri que o for permite percorrer os elementos de uma lista, mas que ainda tenho dificuldade para compreender e utilizar essa estrutura sozinho. — Objeto de conhecimento: estruturas de repetição e iteração em listas.
+3. Percebi que os nomes das chaves de um dicionário precisam ser exatamente iguais quando são cadastrados e acessados, pois uma diferença na escrita pode gerar um KeyError. — Objeto de conhecimento: dicionários e acesso por chaves.
+   
 **3b. Desvio em relação ao Campo 02 (ao menos 1 — causa técnica):**
-- **Desvio:** _…_
-- **Causa técnica:** _…_
+- Inicialmente, o MyLife utilizava apenas listas para armazenar as tarefas. Durante o desenvolvimento, decidi utilizar dicionários dentro da lista para organizar melhor as informações de cada tarefa.
+- A estrutura inicial não permitia organizar informações como descrição e status de maneira individual para cada tarefa. Com os dicionários, passei a utilizar pares de chave e valor para armazenar esses dados.
 
 **3c. Decisão de ajuste (ao menos 1) com justificativa e fonte:**
-- **Decisão:** _…_
-- **Fonte:** _…_
+- Alterar a estrutura de armazenamento das tarefas, utilizando dicionários dentro de uma lista. Também corrigi a chave "Stattus" para "status" após identificar o erro durante a análise do código.
+- Análise e testes do próprio código, videoaulas e explicações do ChatGPT durante o desenvolvimento.
 
-**Objeto de conhecimento mobilizado nesta decisão:** _…_
+**Objeto de conhecimento mobilizado nesta decisão:** listas, dicionários, estruturas de chave e valor e manipulação de dados.
 
 ### 🧩 CAMPO 04 — Interação com IA
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59 | OBRIGATÓRIO*
 
 > **Obrigatório e avaliado. Print sem análise crítica = devolução imediata. Reproduzir a IA sem questionamento = reprovado.**
 
-**4a. Ferramenta:** _…_  **Data:** _DD/MM/AAAA_
+**4a. Ferramenta:**ChatGPT   **Data:** 21/11/2026
 
 **4b. Pergunta formulada (transcrita integralmente):**
 
-> _…_
+> Enviei uma dúvida sobre o erro KeyError: 'status', acompanhada do código e da mensagem apresentada no terminal, buscando entender por que o erro acontecia.
 
 **4c. Resposta da IA (resumida em parágrafo):**
 
-> _…_
+> O ChatGPT explicou que o erro acontecia porque a chave do dicionário estava escrita como "Stattus" no momento do cadastro, mas era chamada como "status" em outra parte do código. Como o Python exige que o nome da chave seja exatamente igual, não conseguiu encontrar a informação solicitada e apresentou o KeyError.
 
 **4d. O que aceitei — com referência ao objeto de conhecimento do componente:**
 
-> _…_
+> Aceitei a explicação sobre a diferença entre os nomes das chaves e corrigi a escrita no código. Isso me ajudou a compreender melhor como os dicionários armazenam e acessam informações por meio de chaves. — Objeto de conhecimento: dicionários e estruturas de chave e valor.
 
 **4e. O que questionei ou descartei — com argumento técnico ou fonte:**
 
-> _…_
-
+> Antes de aceitar a explicação, conferi o próprio código para verificar se a chave estava realmente escrita de forma diferente. Após comparar os nomes, confirmei que o problema era a diferença entre "Stattus" e "status". Assim, não utilizei a resposta sem antes verificar se ela correspondia ao erro apresentado.
 ## 🟠 CICLO 05 — 09/09 — Condicionais aninhadas e operadores lógicos
 
 <details>
