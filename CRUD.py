@@ -2,7 +2,7 @@
 print("===== MyLife 1.0 =====")
 
 tarefas = []
-tarefas_concluidas = []
+
 while True:
     print("\n===== MENU =====")
     print("1 - Adicionar tarefa")
@@ -20,72 +20,63 @@ while True:
         if descriçao == "":
              print("A tarefa não pode estar vazia.")
         else:
-                tarefas.append(descriçao)
+                tarefas.append({
+                    "descricao": descriçao,
+                    "status": "Pendente"
+                })
                 print("Tarefa adicionada com sucesso!")
 
     elif opcao == "2":
-        tarefas_pendentes = []
+       if tarefas:
+         print("\n==== TAREFAS ====")
+         print(tarefas)
 
-        for descricao in tarefas:
-            if descricao not in tarefas_concluidas:
-                tarefas_pendentes.append(descricao)
-
-        if tarefas_pendentes:
-            print("\n====TAREFAS PENDENTES====")
-            for indice, descricao in enumerate(tarefas_pendentes, start=1):
-                print(indice, "-", descricao)
-        else:
-            print("Nenhuma tarefa pendente.")
-
-        if tarefas_concluidas:
-            print("\n====TAREFAS CONCLUIDAS====")
-            for indice, descricao in enumerate(tarefas_concluidas, start=1):
-                print(indice, "-", descricao)
+         for indice, tarefa in enumerate(tarefas, start=1):
+            print(indice, "-", tarefa["descricao"], "-", tarefa["status"])
+       else:
+             print("Nenhuma tarefa cadastrada.")
 
     elif opcao == "3":
-        if tarefas == []:
-            print("Nenhuma tarefa cadastrada.")
+     if tarefas == []:
+        print("Nenhuma tarefa cadastrada.")
+     else:
+        print("\n==== TAREFAS PENDENTES ====")
+
+        pendentes = []
+
+        for indice, tarefa in enumerate(tarefas, start=1):
+            if tarefa["status"] == "Pendente":
+                pendentes.append((indice, tarefa))
+                print(indice, "-", tarefa["descricao"])
+
+        if pendentes == []:
+            print("Todas as tarefas já foram concluídas.")
         else:
-             tarefas_pendentes = []
-
-             contador = 1
-
-             for descricao in tarefas:
-                 if descricao not in tarefas_concluidas:
-                     tarefas_pendentes.append(descricao)
-                     print(contador, "-", descricao)
-                     contador += 1
-
-             if tarefas_pendentes == []:
-               print("Todas as tarefas já foram concluídas.")
-             else:
-                escolha = int(input("Escolha a tarefa que deseja concluir (digite o número): "))
-
-                if escolha < 1 or escolha > len(tarefas_pendentes):
-                   print("Opção inválida!")
-                else:
-                     tarefas_concluidas.append(tarefas_pendentes[escolha - 1])
-                     print("Tarefa concluída com sucesso!")
-            
-
-    elif opcao == "4":
-        if tarefas == []:
-            print("Nenhuma tarefa para excluir.")
-        else:
-            for indice, descricao in enumerate(tarefas, start=1):
-                print(indice, "-", descricao)
-
-            escolha = int(input("Digite o número da tarefa que deseja excluir: "))
+            escolha = int(input("Digite o número da tarefa que deseja concluir: "))
 
             if escolha < 1 or escolha > len(tarefas):
                 print("Opção inválida!")
+            elif tarefas[escolha - 1]["status"] == "Concluída":
+                print("Essa tarefa já foi concluída.")
             else:
-                tarefa_excluida = tarefas.pop(escolha - 1)
+                tarefas[escolha - 1]["status"] = "Concluída"
+                print("Tarefa concluída com sucesso!")
+            
 
-                if tarefa_excluida in tarefas_concluidas:
-                    tarefas_concluidas.remove(tarefa_excluida)
+    elif opcao == "4":
+     if tarefas == []:
+        print("Nenhuma tarefa para excluir.")
+     else:
+        for indice, tarefa in enumerate(tarefas, start=1):
+            print(indice, "-", tarefa["descricao"], "-", tarefa["status"])
 
-                print("Tarefa excluída com sucesso!")
+        escolha = int(input("Digite o número da tarefa que deseja excluir: "))
+
+        if escolha < 1 or escolha > len(tarefas):
+            print("Opção inválida!")
+        else:
+            tarefas.pop(escolha - 1)
+            print("Tarefa excluída com sucesso!")
 
     elif opcao == "5":
         print("Encerrando o MyLife...")
