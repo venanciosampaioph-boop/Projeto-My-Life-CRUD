@@ -733,71 +733,43 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | Pedro Lucas Pereira Rolim |
-| **Repositório revisado** | https://github.com/pedruck9-crypto/algoritmos-e-programacao |
-| **Revisor** | Pedro Henrique Venancio Sampaio |
-| **Ciclo / data** | Ciclo 12 · 11/11 (referência do ciclo) · revisão realizada em 23/11/2026 |
-| **Versão / commit analisado** | Branch `ciclo-3-funções` · [commit 00bbbbe](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7) |
+| **Autor do CRUD revisado** | _Preencher_ |
+| **Repositório revisado** | _Preencher_ |
+| **Revisor** | _Preencher_ |
+| **Ciclo / data** | _Preencher_ |
+| **Versão / commit analisado** | _Preencher_ |
 
 **5a. AVANÇO DO PROCESSO DE REVISÃO:**
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. Identificar a branch e o commit correspondente ao ciclo 3. | Revisor | 23/11/2026 | Concluída | Foi selecionada a versão histórica do ciclo 3, separada da branch principal. |
-| 2. Inspecionar a divisão do programa em funções. | Revisor | 23/11/2026 | Concluída | Foram identificadas funções para cadastro, listagem, busca, atualização, exclusão e menu. |
-| 3. Verificar reutilização de código e clareza das responsabilidades. | Revisor | 23/11/2026 | Concluída | A função `buscar_midia()` é reutilizada por outras operações, reduzindo repetição. |
-| 4. Examinar escopo de variáveis, listas auxiliares e validações. | Revisor | 23/11/2026 | Concluída | Foram identificados pontos de melhoria relacionados à variável global `proximo_id`, às listas paralelas e às validações. |
-| 5. Consolidar os achados e elaborar feedback. | Revisor | 23/11/2026 | Concluída | A evolução em relação à versão do ciclo 2 e as melhorias possíveis foram registradas. |
+| 1. _Descrever etapa_ | _…_ | _…_ | _…_ | _…_ |
+| 2. _Descrever etapa_ | _…_ | _…_ | _…_ | _…_ |
+| 3. _Descrever etapa_ | _…_ | _…_ | _…_ | _…_ |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| Versão/commit do código-fonte | 1 | 1 | Sem variação | Foi analisado o commit indicado da branch do ciclo 3. |
-| Funções principais a inspecionar | 6 | 6 | Sem variação | Cadastro, listagem, busca, atualização, exclusão e execução do menu. |
-| Critérios de qualidade | 4 | 4 | Sem variação | Modularização, reutilização, escopo de variáveis e validação/consistência da saída. |
-| Execuções de teste nesta branch | 0 | 0 | Não executado | A branch histórica foi analisada estaticamente; os testes práticos realizados foram na versão atual da branch main e não são atribuídos a este commit. |
+| _…_ | _…_ | _…_ | _…_ | _…_ |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** modularização, responsabilidade das funções, reutilização de código, clareza dos nomes e validação das entradas.
-- **A solução atende?** ☒ Parcialmente ☐ Sim ☐ Não
+- **Critério ou norma técnica:** _Preencher_
+- **A solução atende?** ☐ Parcialmente ☐ Sim ☐ Não
 
-**Justificativa:** houve evolução em relação à versão anterior, pois as operações foram separadas em funções e a busca foi centralizada em `buscar_midia()`. Ainda assim, o uso da variável global `proximo_id` cria dependência externa; as listas paralelas usadas na atualização precisam manter seus índices alinhados; e a saída da busca poderia seguir o mesmo padrão de apresentação da listagem. As validações do cadastro também podem ser ampliadas.
+**Justificativa:** _Preencher_
 
-**Feedback ao autor:** a modularização deixou o programa mais organizado e facilitou identificar a responsabilidade de cada operação. O reaproveitamento de `buscar_midia()` também reduz repetição. Como melhorias, sugiro reduzir a dependência da variável global `proximo_id`, evitar listas paralelas que dependem da mesma posição dos índices, padronizar a apresentação dos resultados e ampliar as validações dos campos.
+**Feedback ao autor:** _Preencher_
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** alterações futuras podem gerar inconsistências por dependência de variável global ou por desalinhamento entre listas paralelas. Outro risco é atribuir à branch histórica resultados de testes feitos em outra versão.
-- **Estratégia de mitigação:** recomendar parâmetros/retornos explícitos e uma estrutura de dados única para relacionar campos e rótulos. Manter separados os registros da inspeção estática da branch do ciclo 3 e os testes executados na branch main.
+- **Risco:** _Preencher_
+- **Estratégia de mitigação:** _Preencher_
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| 23/11/2026 | Avaliar a divisão das operações em funções. | Revisor | Modularização e definição de funções. | Código no [commit 00bbbbe](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7); [tutorial Python — definição de funções](https://docs.python.org/3/tutorial/controlflow.html#defining-functions). |
-| 23/11/2026 | Verificar o reaproveitamento de `buscar_midia()`. | Revisor | Reutilização de código, parâmetros e retorno de funções. | Código no [commit 00bbbbe](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7). |
-| 23/11/2026 | Recomendar revisão da variável global `proximo_id`. | Revisor | Escopo de variáveis e passagem de parâmetros. | [Tutorial Python — escopos e namespaces](https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces). |
-| 23/11/2026 | Avaliar o uso de listas paralelas na atualização. | Revisor | Listas, índices e estruturas de dados. | [Documentação Python — estruturas de dados](https://docs.python.org/3/tutorial/datastructures.html). |
-| 23/11/2026 | Recomendar padronização da saída e ampliação das validações. | Revisor | Formatação de saída e validação de entrada. | [Documentação Python — tipos embutidos](https://docs.python.org/3/library/stdtypes.html). |
-
-**EVIDÊNCIA COMPLEMENTAR — TESTES PRÁTICOS NA VERSÃO ATUAL (BRANCH `main`):**
-
-Em 23/11/2026, foi baixada e executada localmente uma versão posterior da API, construída com FastAPI. Os testes abaixo pertencem exclusivamente a essa versão atual, não aos commits históricos dos ciclos 2 e 3.
-
-| TESTE NA API ATUAL | RESULTADO OBSERVADO |
-|---|---|
-| Cadastrar mídia válida | HTTP 201 |
-| Listar mídias | HTTP 200 |
-| Buscar mídia existente | HTTP 200 |
-| Buscar mídia inexistente | HTTP 404 |
-| Atualizar mídia existente | HTTP 200 |
-| Excluir mídia existente | HTTP 200 |
-| Consultar a mídia após exclusão | HTTP 404 |
-| Cadastrar título vazio | HTTP 422 |
-| Cadastrar ano 1800 | HTTP 422 |
-| Cadastrar tipo não permitido (`documentário`) | HTTP 422 |
-
-**Interpretação:** os resultados mostram que os endpoints e as validações testadas responderam como esperado na versão atual da API. Essa evidência é complementar e não altera a conclusão da inspeção estática dos commits históricos.
+| _…_ | _…_ | _…_ | _…_ | _…_ |
 
 ### 🧩 CAMPO 07 — Evolução conceitual
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
