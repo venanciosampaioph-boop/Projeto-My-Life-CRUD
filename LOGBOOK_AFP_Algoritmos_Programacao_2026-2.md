@@ -759,7 +759,17 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 
 **Justificativa:** _Preencher_
 
-**Feedback ao autor:** _Preencher_
+**Feedback ao autor:**
+
+O projeto apresenta uma evolução importante, com API organizada, persistência em SQLite, filtros, paginação e testes automatizados. Como melhorias para a versão atual da branch `main`, sugiro:
+
+- **Validação dos campos:** além de verificar o tamanho mínimo do título, tratar títulos compostos apenas por espaços e validar o formato de `imagem_url`, quando informado. Também vale validar o valor recebido no filtro `tipo`.
+- **Acesso às credenciais:** o endpoint `GET /credenciais` permite listar usuários sem autenticação. Mesmo sem retornar as senhas ou seus hashes, seria melhor restringir esse acesso para evitar exposição de nomes de usuário e datas de criação.
+- **Atualização no banco:** em `update_midia()`, a conversão dos valores em uma lista e o uso de `zip()` podem ser simplificados percorrendo diretamente os pares de chave e valor do dicionário, deixando o código mais claro.
+- **Configuração de CORS:** substituir a permissão ampla `allow_origins=["*"]` por uma lista dos domínios realmente utilizados, principalmente se a aplicação for mantida em produção.
+- **Regra automática de cadastro:** documentar melhor a inclusão automática de “Vingadores: Ultimato” ou torná-la configurável, pois é uma regra específica que pode surpreender quem espera um catálogo genérico.
+
+Recomendo também criar testes automatizados para esses casos, especialmente título com espaços, URL inválida, filtro de tipo inválido e acesso não autorizado a `/credenciais`. Essas sugestões são referentes à versão atual da branch `main`; elas complementam a análise do commit histórico do Ciclo 3, mas não devem ser entendidas como problemas testados naquele commit.
 
 **5d. GESTÃO DE RISCOS:**
 - **Risco:** _Preencher_
