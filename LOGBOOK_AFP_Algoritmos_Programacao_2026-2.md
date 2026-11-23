@@ -347,8 +347,7 @@ Menu: identificar opções inválidas e encerrar o programa quando o usuário es
 - **3b.** Pelo menos **1 desvio** em relação ao Campo 02 (o que você planejou e não aconteceu) e a **causa técnica** — não vale "falta de tempo".
 - **3c.** Pelo menos **1 decisão de ajuste**, com justificativa e **fonte**, e o objeto de conhecimento mobilizado.
 
-**Campo 04 — Interação com IA** · *sábado 21/11, 23h59 · obrigatório e avaliado*
-- Registre **pelo menos uma** interação real com uma IA sobre o seu CRUD.
+**Campo 04 — Interação com IA** · *sábado 21/11, 23h59 · obrigatório e avaliado*- Registre **pelo menos uma** interação real com uma IA sobre o seu CRUD.
 - **4b.** Transcreva a pergunta **na íntegra** (copie e cole).
 - **4c.** Resuma a resposta em **um parágrafo** com as suas palavras.
 - **4d.** O que você **aceitou**, ligando ao objeto de conhecimento.
@@ -595,49 +594,53 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | _nome_ |
-| **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
+| **Autor do CRUD revisado** | Pedro Lucas Pereira Rolim |
+| **Repositório revisado** | https://github.com/pedruck9-crypto/algoritmos-e-programacao |
+| **Revisor** | Pedro Henrique Venancio Sampaio |
 | **Unidade curricular / Semestre** | Algoritmos e Programação · 2026.2 |
-| **Ciclo / data** | _Ciclo 09 · 21/10_ |
+| **Ciclo / data** | Ciclo 09 · 21/10 (referência do ciclo) · revisão realizada em 23/11/2026 |
+| **Versão / commit analisado** | Branch `ciclo-2-estruturas-dinâmicas` · [commit 466768a](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/466768adcc36dfbecda6a9d22a8275c32b3e0775) |
 
 **5a. AVANÇO DO PROCESSO DE REVISÃO — análise técnica de cada etapa:**
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 1. Identificar o repositório, a branch e o commit da versão do ciclo 2. | Revisor | 23/11/2026 | Concluída | Foi necessário selecionar a branch histórica do ciclo, pois a branch principal contém uma versão posterior. |
+| 2. Ler o código-fonte e identificar as estruturas de dados utilizadas. | Revisor | 23/11/2026 | Concluída | Foram identificadas listas e dicionários para armazenar os registros de filmes e séries. |
+| 3. Verificar a presença das operações de cadastro, listagem, busca, atualização e exclusão. | Revisor | 23/11/2026 | Concluída | As cinco operações estão implementadas no código. A verificação desta branch foi estática; não foi executada. |
+| 4. Examinar as validações e o tratamento de entradas inválidas. | Revisor | 23/11/2026 | Concluída | Foram observadas validações limitadas, principalmente a validação do título, com oportunidade de ampliar as verificações dos demais campos. |
+| 5. Registrar os achados e preparar feedback técnico. | Revisor | 23/11/2026 | Concluída | Os pontos positivos e as melhorias foram registrados abaixo. |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| Versão/commit do código-fonte | 1 | 1 | Sem variação | Foi analisado o commit indicado da branch do ciclo 2. |
+| Operações CRUD a verificar | 5 | 5 | Sem variação | Cadastro, listagem, busca, atualização e exclusão foram localizados no código. |
+| Critérios de inspeção estática | 4 | 4 | Sem variação | Foram considerados estruturas de dados, fluxo das operações, validações e tratamento de identificadores. |
+| Execuções de teste nesta branch | 0 | 0 | Não executado | Não foi realizada execução independente desta versão histórica; por isso, não são atribuídos resultados de execução a este commit. |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
+- **Critério ou norma técnica:** presença das cinco operações CRUD, uso coerente de estruturas de dados, tratamento de identificadores e validação das entradas.
+- **A solução atende?** ☒ Parcialmente ☐ Sim ☐ Não
+
+**Justificativa:** o código contém as operações principais e utiliza listas e dicionários de forma adequada para armazenar as mídias. Entretanto, a validação dos campos pode ser ampliada, especialmente para tipo, gênero e ano. Também é recomendável tratar entradas inválidas de identificador de maneira explícita. A conclusão decorre da leitura do código, não de testes executados nesta branch.
+
+**Feedback ao autor:** a versão apresenta uma boa base de CRUD e deixa claras as operações disponíveis. Recomendo ampliar a validação dos campos do cadastro e da atualização, principalmente tipo, gênero e ano, além de reforçar o tratamento de identificadores inválidos. Isso evita registros incompletos e torna o fluxo mais previsível.
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
+- **Risco:** aceitar dados incompletos ou inconsistentes e interpretar a análise estática como se fosse uma execução real.
+- **Estratégia de mitigação:** recomendar validações para cada campo e registrar explicitamente que esta versão foi inspecionada pelo código-fonte, sem execução. A branch e o commit foram fixados no registro para manter a rastreabilidade.
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-
-> **IMPORTANTE:** Decisão registrada sem objeto de conhecimento associado e sem referência é considerada **não rastreável** e não conta para a avaliação formativa. O vínculo entre processo e conteúdo é obrigatório em todas as decisões relevantes.
+| 23/11/2026 | Verificar a estrutura usada para armazenar os registros. | Revisor | Listas, dicionários e estruturas de dados. | Código no [commit 466768a](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/466768adcc36dfbecda6a9d22a8275c32b3e0775); [documentação Python — estruturas de dados](https://docs.python.org/3/tutorial/datastructures.html). |
+| 23/11/2026 | Conferir a presença das cinco operações CRUD. | Revisor | Lógica de programação, condicionais e manipulação de coleções. | Código no [commit 466768a](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/466768adcc36dfbecda6a9d22a8275c32b3e0775). |
+| 23/11/2026 | Recomendar validação dos campos além do título. | Revisor | Validação de entrada e tipos de dados. | [Documentação Python — tipos embutidos](https://docs.python.org/3/library/stdtypes.html). |
+| 23/11/2026 | Verificar o tratamento de identificadores inválidos. | Revisor | Conversão de tipos e estruturas condicionais. | [Tutorial Python — controle de fluxo](https://docs.python.org/3/tutorial/controlflow.html). |
+| 23/11/2026 | Distinguir inspeção estática de teste de execução. | Revisor | Verificação e testes de software. | Procedimento de revisão registrado e commit histórico identificado acima. |
 
 ## 🔵 CICLO 10 — 28/10 — Modularização: funções
 
@@ -697,7 +700,6 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 
 - **Pergunta:** _…_
 - **Resposta:**
-
 > _…_
 
 **Objeto de conhecimento mobilizado:** _…_
@@ -731,46 +733,71 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | _nome_ |
-| **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
-| **Ciclo / data** | _Ciclo 12 · 11/11_ |
+| **Autor do CRUD revisado** | Pedro Lucas Pereira Rolim |
+| **Repositório revisado** | https://github.com/pedruck9-crypto/algoritmos-e-programacao |
+| **Revisor** | Pedro Henrique Venancio Sampaio |
+| **Ciclo / data** | Ciclo 12 · 11/11 (referência do ciclo) · revisão realizada em 23/11/2026 |
+| **Versão / commit analisado** | Branch `ciclo-3-funções` · [commit 00bbbbe](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7) |
 
 **5a. AVANÇO DO PROCESSO DE REVISÃO:**
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 1. Identificar a branch e o commit correspondente ao ciclo 3. | Revisor | 23/11/2026 | Concluída | Foi selecionada a versão histórica do ciclo 3, separada da branch principal. |
+| 2. Inspecionar a divisão do programa em funções. | Revisor | 23/11/2026 | Concluída | Foram identificadas funções para cadastro, listagem, busca, atualização, exclusão e menu. |
+| 3. Verificar reutilização de código e clareza das responsabilidades. | Revisor | 23/11/2026 | Concluída | A função `buscar_midia()` é reutilizada por outras operações, reduzindo repetição. |
+| 4. Examinar escopo de variáveis, listas auxiliares e validações. | Revisor | 23/11/2026 | Concluída | Foram identificados pontos de melhoria relacionados à variável global `proximo_id`, às listas paralelas e às validações. |
+| 5. Consolidar os achados e elaborar feedback. | Revisor | 23/11/2026 | Concluída | A evolução em relação à versão do ciclo 2 e as melhorias possíveis foram registradas. |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| Versão/commit do código-fonte | 1 | 1 | Sem variação | Foi analisado o commit indicado da branch do ciclo 3. |
+| Funções principais a inspecionar | 6 | 6 | Sem variação | Cadastro, listagem, busca, atualização, exclusão e execução do menu. |
+| Critérios de qualidade | 4 | 4 | Sem variação | Modularização, reutilização, escopo de variáveis e validação/consistência da saída. |
+| Execuções de teste nesta branch | 0 | 0 | Não executado | A branch histórica foi analisada estaticamente; os testes práticos realizados foram na versão atual da branch main e não são atribuídos a este commit. |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
+- **Critério ou norma técnica:** modularização, responsabilidade das funções, reutilização de código, clareza dos nomes e validação das entradas.
+- **A solução atende?** ☒ Parcialmente ☐ Sim ☐ Não
+
+**Justificativa:** houve evolução em relação à versão anterior, pois as operações foram separadas em funções e a busca foi centralizada em `buscar_midia()`. Ainda assim, o uso da variável global `proximo_id` cria dependência externa; as listas paralelas usadas na atualização precisam manter seus índices alinhados; e a saída da busca poderia seguir o mesmo padrão de apresentação da listagem. As validações do cadastro também podem ser ampliadas.
+
+**Feedback ao autor:** a modularização deixou o programa mais organizado e facilitou identificar a responsabilidade de cada operação. O reaproveitamento de `buscar_midia()` também reduz repetição. Como melhorias, sugiro reduzir a dependência da variável global `proximo_id`, evitar listas paralelas que dependem da mesma posição dos índices, padronizar a apresentação dos resultados e ampliar as validações dos campos.
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
+- **Risco:** alterações futuras podem gerar inconsistências por dependência de variável global ou por desalinhamento entre listas paralelas. Outro risco é atribuir à branch histórica resultados de testes feitos em outra versão.
+- **Estratégia de mitigação:** recomendar parâmetros/retornos explícitos e uma estrutura de dados única para relacionar campos e rótulos. Manter separados os registros da inspeção estática da branch do ciclo 3 e os testes executados na branch main.
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
+| 23/11/2026 | Avaliar a divisão das operações em funções. | Revisor | Modularização e definição de funções. | Código no [commit 00bbbbe](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7); [tutorial Python — definição de funções](https://docs.python.org/3/tutorial/controlflow.html#defining-functions). |
+| 23/11/2026 | Verificar o reaproveitamento de `buscar_midia()`. | Revisor | Reutilização de código, parâmetros e retorno de funções. | Código no [commit 00bbbbe](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7). |
+| 23/11/2026 | Recomendar revisão da variável global `proximo_id`. | Revisor | Escopo de variáveis e passagem de parâmetros. | [Tutorial Python — escopos e namespaces](https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces). |
+| 23/11/2026 | Avaliar o uso de listas paralelas na atualização. | Revisor | Listas, índices e estruturas de dados. | [Documentação Python — estruturas de dados](https://docs.python.org/3/tutorial/datastructures.html). |
+| 23/11/2026 | Recomendar padronização da saída e ampliação das validações. | Revisor | Formatação de saída e validação de entrada. | [Documentação Python — tipos embutidos](https://docs.python.org/3/library/stdtypes.html). |
+
+**EVIDÊNCIA COMPLEMENTAR — TESTES PRÁTICOS NA VERSÃO ATUAL (BRANCH `main`):**
+
+Em 23/11/2026, foi baixada e executada localmente uma versão posterior da API, construída com FastAPI. Os testes abaixo pertencem exclusivamente a essa versão atual, não aos commits históricos dos ciclos 2 e 3.
+
+| TESTE NA API ATUAL | RESULTADO OBSERVADO |
+|---|---|
+| Cadastrar mídia válida | HTTP 201 |
+| Listar mídias | HTTP 200 |
+| Buscar mídia existente | HTTP 200 |
+| Buscar mídia inexistente | HTTP 404 |
+| Atualizar mídia existente | HTTP 200 |
+| Excluir mídia existente | HTTP 200 |
+| Consultar a mídia após exclusão | HTTP 404 |
+| Cadastrar título vazio | HTTP 422 |
+| Cadastrar ano 1800 | HTTP 422 |
+| Cadastrar tipo não permitido (`documentário`) | HTTP 422 |
+
+**Interpretação:** os resultados mostram que os endpoints e as validações testadas responderam como esperado na versão atual da API. Essa evidência é complementar e não altera a conclusão da inspeção estática dos commits históricos.
 
 ### 🧩 CAMPO 07 — Evolução conceitual
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
