@@ -898,7 +898,7 @@ Em 23/11/2026, foi baixada e executada localmente uma versão posterior da API, 
 1. **O que apresentei/defendi (em 1 frase):** Apresentei e defendi a versão básica 1.0 do MyLife, explicando o funcionamento das operações de adicionar, visualizar, concluir e excluir uma tarefa.
 2. **Objeto(s) de conhecimento que a banca mais explorou:** Variáveis, tipo booleano e controle do estado da tarefa, especialmente o uso de `concluida` para diferenciar uma tarefa pendente de uma concluída.
 3. **Pergunta que mais me desafiou e como respondi:** A banca perguntou sobre a exclusão de uma tarefa e como o sistema garantia que uma nova tarefa começasse como pendente. Expliquei que, ao excluir a tarefa, o código limpa a variável `tarefa` e redefine `concluida = False`; ao adicionar uma nova tarefa, também atribui `False` a essa variável. Assim, o estado da tarefa nova começa como pendente.
-4. **O que levo deste semestre para o próximo módulo:** _…_
+4. **O que levo deste semestre para o próximo módulo:** Levo conhecimentos de lógica de programação, listas, dicionários, estruturas de dados, condições e laços de repetição, que servem de base para desenvolver programas e resolver problemas em Python.
 
 ---
 
