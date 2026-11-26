@@ -116,7 +116,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
 | 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 05 — Revisão por pares nº 1 e nº 2 | 26/11 | ⬜ | ⬜ |
-| 3 | Campo 06 — Próximos passos | 26/11 | ⬜ | ⬜ |
+| 3 | Campo 06 — Próximos passos | 26/11 | ✅ | ✅ |
 | 3 | Campo 07 — Evolução conceitual | 26/11 | ⬜ | ⬜ |
 | 🏁 | Defesa Técnica | 18/11 | ⬜ | — |
 
@@ -699,21 +699,30 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 
 **6a. Decisão técnica que defendo com plena autonomia — o que aprendi que é exclusivamente meu e não consigo transferir para nenhum colega:**
 
-> _…_
+A escolha de utilizar listas e dicionários para organizar as tarefas do MyLife. A lista permite armazenar várias tarefas, enquanto os dicionários permitem guardar informações específicas de cada uma, como descrição e status. Essa estrutura também permite pensar na inclusão de outras características para cada tarefa, como nível de prioridade e prazo, facilitando sua organização e seu gerenciamento.
 
 **6b. Lacuna técnica e plano de ação para saná-la:**
 
-- **Lacuna:** _…_
-- **Plano de ação (passos e datas):** _…_
+- **Lacuna:** Tenho dificuldade em escrever códigos para acessar e modificar informações armazenadas em dicionários, principalmente ao trabalhar com os dados de cada tarefa.
+- **Plano de ação (passos e datas):**
+  1. **25/11/2026:** Revisar a estrutura dos dicionários e compreender melhor como acessar seus valores por meio das chaves.
+  2. **25/11/2026:** Praticar exercícios de criação, consulta e alteração de informações em dicionários.
+  3. **26/11/2026:** Aplicar os conhecimentos em pequenos exemplos relacionados ao MyLife, buscando desenvolver maior autonomia na escrita do código.
 
 **6c. Pergunta que a banca pode fazer — com resposta fundamentada (mínimo 5 linhas):**
 
-- **Pergunta:** _…_
+- **Pergunta:** Por que você utilizou dicionários para armazenar as informações das tarefas em vez de utilizar apenas listas?
 - **Resposta:**
-> _…_
 
-**Objeto de conhecimento mobilizado:** _…_
-**Fonte:** _…_
+  Utilizei dicionários porque queria que cada tarefa pudesse possuir informações próprias, além de sua descrição.  
+  Com essa estrutura, é possível organizar os dados por meio de pares de chave e valor, como descrição e status.  
+  A ideia também era permitir que cada tarefa tivesse outras características, como nível de prioridade e prazo.  
+  Dessa forma, consigo acessar e modificar informações específicas de cada tarefa por meio de suas chaves.  
+  A lista continua sendo utilizada para armazenar várias tarefas, enquanto os dicionários organizam as informações individuais de cada uma.
+
+**Objeto de conhecimento mobilizado:** Estruturas de dados, listas, dicionários, pares de chave e valor, acesso e alteração de valores por meio de chaves e manipulação de coleções em Python.
+
+**Fonte:** [Documentação oficial do Python — Estruturas de dados](https://docs.python.org/3/tutorial/datastructures.html). Também utilizei o ChatGPT como apoio para esclarecer dúvidas durante a implementação e compreender o funcionamento dos dicionários.
 
 ## 🔵 CICLO 12 — 11/11 — Refatoração e qualidade de código
 
