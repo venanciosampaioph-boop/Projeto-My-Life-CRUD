@@ -684,15 +684,15 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 11 — 04/11
-*Registro complementado em 25/11/2026.*
+*Registro complementado em 25/11/2026, após aplicar recursividade ao MyLife.*
 
-1. **Desafio do ciclo (em 1 frase):** Compreender como funciona a recursividade e identificar a condição que encerra as chamadas de uma função.
-2. **O que implementei (commits / arquivos / links):** Resolvi um exercício de lógica em Python criando a função `somar(numero)`, que soma os números de 1 até o valor recebido. Testei a chamada `somar(6)`. A atividade foi um exercício separado, não uma funcionalidade implementada no MyLife.
-3. **Objeto(s) de conhecimento mobilizado(s):** Funções, parâmetros, condição de parada, `if`, `return` e chamada recursiva — quando uma função chama a si mesma com um argumento menor.
-4. **Desvio ou erro encontrado + causa técnica:** Tive dificuldade inicial para organizar a estrutura da função e compreender a condição de parada e o retorno da chamada recursiva. Foi necessário ajustar a sintaxe e a indentação até chegar à versão correta.
-5. **Decisão de ajuste + fonte:** Organizei a função para retornar 0 quando o parâmetro chega a 0; nos demais casos, retornar o valor atual somado ao resultado de `somar(numero - 1)`. Usei o ChatGPT como apoio durante a prática e a documentação oficial do Python sobre definição de funções como referência: https://docs.python.org/3/tutorial/controlflow.html#defining-functions.
-6. **Feedback recebido e o que mudei:** Não recebi feedback específico do professor ou de colegas. Ajustei a solução durante a prática, a partir das correções e da compreensão do funcionamento da função.
-7. **Próximo passo:** Resolver outros exercícios de recursividade para compreender melhor a sequência das chamadas e dos retornos antes de tentar aplicar esse conceito em um projeto.
+1. **Desafio do ciclo (em 1 frase):** Aplicar a recursividade na visualização das tarefas do MyLife, substituindo a repetição com `for` por chamadas de uma função a si mesma.
+2. **O que implementei (commits / arquivos / links):** Criei a função `exibir_tarefas_recursivo(tarefas, indice=0)` no arquivo `CRUD.py` e passei a chamá-la dentro de `visualizar_tarefas()`. A função exibe a tarefa da posição atual e chama a si mesma para avançar ao próximo índice. Alteração registrada no [commit ea19d4f](https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD/commit/ea19d4f56cef055ea2d71d26b7db1504086604a0).
+3. **Objeto(s) de conhecimento mobilizado(s):** Recursividade, definição de funções, parâmetros, parâmetro com valor padrão, condição de parada, índice de lista, `if`, `return` e chamada recursiva.
+4. **Desvio ou erro encontrado + causa técnica:** A principal dúvida foi entender por que a condição de parada compara `indice` com `len(tarefas)` e por que a chamada recursiva precisa usar `indice + 1`. Sem incrementar o índice, a função repetiria a mesma chamada e não alcançaria a condição de parada.
+5. **Decisão de ajuste + fonte:** Mantive a verificação de lista vazia em `visualizar_tarefas()` e defini como condição de parada `indice == len(tarefas)`. A cada chamada, a função acessa `tarefas[indice]`, imprime a tarefa e avança com `exibir_tarefas_recursivo(tarefas, indice + 1)`. Usei o ChatGPT como apoio para compreender a lógica e a [documentação oficial do Python sobre definição de funções](https://docs.python.org/3/tutorial/controlflow.html#defining-functions) como referência.
+6. **Feedback recebido e o que mudei:** Não recebi feedback específico do professor ou de colegas. Durante a implementação, esclareci as dúvidas sobre a condição de parada e o avanço do índice antes de concluir a alteração.
+7. **Próximo passo:** Executar o MyLife localmente e testar a visualização com lista vazia, uma tarefa e várias tarefas, além de continuar praticando recursividade para compreender melhor a sequência de chamadas e retornos.
 
 ### 🧩 CAMPO 06 — Próximos passos para a defesa
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
