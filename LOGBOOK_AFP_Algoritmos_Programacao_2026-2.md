@@ -575,13 +575,15 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 09 — 21/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+*Registro complementado em 25/11/2026, com base no histórico de commits e nas versões do código disponíveis no GitHub.*
+
+1. **Desafio do ciclo (em 1 frase):** Ampliar o MyLife para trabalhar com várias tarefas, permitindo cadastrar, visualizar, concluir e excluir cada tarefa de forma independente.
+2. **O que implementei (commits / arquivos / links):** Evoluí o arquivo `CRUD.py` para utilizar uma lista de tarefas e, depois, dicionários com as chaves `descricao` e `status`. Implementei cadastro, listagem, conclusão e exclusão de tarefas. Evidências: [implementação de múltiplas tarefas](https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD/commit/f3c67b3b09c9265bb4ee42fe1455598c70e41b51), [implementação da exclusão](https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD/commit/4f44e7717cd498f7f9a6b8160fb7d3de6cde23b5), [implementação de dicionários](https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD/commit/6c0eb67b03dfe2e2a24cf568bf384289036aebe0) e [ajustes finais do MyLife 2.0](https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD/commit/99bce6db645b2d28536a13bb3cb23853564aa1d4).
+3. **Objeto(s) de conhecimento mobilizado(s):** Listas, dicionários, pares de chave e valor, laços `for`, função `enumerate()`, índices, estruturas condicionais e manipulação de elementos com `append()` e `pop()`.
+4. **Desvio ou erro encontrado + causa técnica:** Uma dificuldade foi relacionar o número exibido ao usuário com a posição real do elemento na lista. Como a listagem começa em 1, mas os índices do Python começam em 0, precisei utilizar `escolha - 1` para acessar ou excluir a tarefa correta. Também identifiquei que a versão desenvolvida não chegou a implementar a atualização da descrição de uma tarefa; portanto, apesar de possuir cadastro, consulta, conclusão e exclusão, não contempla o CRUD completo com a operação Update.
+5. **Decisão de ajuste + fonte:** Mantive a numeração apresentada ao usuário começando em 1 com `enumerate(tarefas, start=1)` e converti a escolha para índice da lista usando `escolha - 1`. Para excluir, utilizei `tarefas.pop(escolha - 1)`. Baseei os ajustes na análise e nos testes do próprio código e na [documentação oficial do Python sobre estruturas de dados](https://docs.python.org/3/tutorial/datastructures.html).
+6. **Feedback recebido e o que mudei:** Não há registro de feedback específico do professor ou de colegas sobre essa implementação. As correções foram feitas a partir da análise do código, dos erros encontrados e dos testes realizados durante o desenvolvimento.
+7. **Próximo passo:** Estudar melhor funções e modularização, continuar praticando listas e dicionários e, como melhoria futura, implementar a edição da descrição de uma tarefa para incluir a operação Update.
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares
 *Adaptação do **Logbook do Time** (Apêndice C) para o CRUD individual. Documento atualizado pelo **revisor**. Cada decisão técnica relevante deve ter associado o objeto de conhecimento correspondente.*
