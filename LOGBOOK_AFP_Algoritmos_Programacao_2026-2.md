@@ -358,6 +358,10 @@ Menu: identificar opções inválidas e encerrar o programa quando o usuário es
 ### 🧩 CHECKPOINT CONCEITUAL INDIVIDUAL
 *20 minutos · sem consulta a qualquer fonte, material ou colega · conforme orientação do professor.*
 
+Pendência registrada em 25/11/2026: recebi no grupo da turma o esclarecimento de que “3a = questão 1” se refere ao Campo 03. Ainda não recebi o enunciado das três questões nem a confirmação sobre a aplicação do checkpoint. Aguardo orientação do professor para realizá-lo em 20 minutos, sem consulta.
+
+| | |
+
 | | |
 |---|---|
 | **Nome do estudante** | _…_ |
