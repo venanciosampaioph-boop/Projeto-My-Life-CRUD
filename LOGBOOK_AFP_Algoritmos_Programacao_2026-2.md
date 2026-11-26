@@ -684,13 +684,15 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 11 — 04/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+*Registro complementado em 25/11/2026.*
+
+1. **Desafio do ciclo (em 1 frase):** Compreender como funciona a recursividade e identificar a condição que encerra as chamadas de uma função.
+2. **O que implementei (commits / arquivos / links):** Resolvi um exercício de lógica em Python criando a função `somar(numero)`, que soma os números de 1 até o valor recebido. Testei a chamada `somar(6)`. A atividade foi um exercício separado, não uma funcionalidade implementada no MyLife.
+3. **Objeto(s) de conhecimento mobilizado(s):** Funções, parâmetros, condição de parada, `if`, `return` e chamada recursiva — quando uma função chama a si mesma com um argumento menor.
+4. **Desvio ou erro encontrado + causa técnica:** Tive dificuldade inicial para organizar a estrutura da função e compreender a condição de parada e o retorno da chamada recursiva. Foi necessário ajustar a sintaxe e a indentação até chegar à versão correta.
+5. **Decisão de ajuste + fonte:** Organizei a função para retornar 0 quando o parâmetro chega a 0; nos demais casos, retornar o valor atual somado ao resultado de `somar(numero - 1)`. Usei o ChatGPT como apoio durante a prática e a documentação oficial do Python sobre definição de funções como referência: https://docs.python.org/3/tutorial/controlflow.html#defining-functions.
+6. **Feedback recebido e o que mudei:** Não recebi feedback específico do professor ou de colegas. Ajustei a solução durante a prática, a partir das correções e da compreensão do funcionamento da função.
+7. **Próximo passo:** Resolver outros exercícios de recursividade para compreender melhor a sequência das chamadas e dos retornos antes de tentar aplicar esse conceito em um projeto.
 
 ### 🧩 CAMPO 06 — Próximos passos para a defesa
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
