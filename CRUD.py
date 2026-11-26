@@ -6,12 +6,13 @@ def adicionar_tarefa(tarefas):
 
     if not descricao:
         print("A tarefa não pode estar vazia.")
-    else:
-        tarefas.append({
-            "descricao": descricao,
-            "status": "Pendente"
-        })
-        print("Tarefa adicionada com sucesso!")
+        return
+
+    tarefas.append({
+        "descricao": descricao,
+        "status": "Pendente"
+    })
+    print("Tarefa adicionada com sucesso!")
 
 
 def exibir_tarefas_recursivo(tarefas, indice=0):
@@ -19,7 +20,6 @@ def exibir_tarefas_recursivo(tarefas, indice=0):
         return
 
     tarefa = tarefas[indice]
-
     print(indice + 1, "-", tarefa["descricao"], "-", tarefa["status"])
 
     exibir_tarefas_recursivo(tarefas, indice + 1)
@@ -28,9 +28,24 @@ def exibir_tarefas_recursivo(tarefas, indice=0):
 def visualizar_tarefas(tarefas):
     if not tarefas:
         print("Nenhuma tarefa cadastrada.")
-    else:
-        print("\n==== TAREFAS ====")
-        exibir_tarefas_recursivo(tarefas)
+        return
+
+    print("\n==== TAREFAS ====")
+    exibir_tarefas_recursivo(tarefas)
+
+
+def solicitar_indice_tarefa(tarefas, mensagem):
+    try:
+        escolha = int(input(mensagem))
+    except ValueError:
+        print("Digite um número válido.")
+        return None
+
+    if escolha < 1 or escolha > len(tarefas):
+        print("Opção inválida!")
+        return None
+
+    return escolha - 1
 
 
 def concluir_tarefa(tarefas):
@@ -39,20 +54,20 @@ def concluir_tarefa(tarefas):
         return
 
     visualizar_tarefas(tarefas)
+    indice = solicitar_indice_tarefa(
+        tarefas,
+        "Digite o número da tarefa que deseja concluir: "
+    )
 
-    try:
-        escolha = int(input("Digite o número da tarefa que deseja concluir: "))
-    except ValueError:
-        print("Digite um número válido.")
+    if indice is None:
         return
 
-    if escolha < 1 or escolha > len(tarefas):
-        print("Opção inválida!")
-    elif tarefas[escolha - 1]["status"] == "Concluída":
+    if tarefas[indice]["status"] == "Concluída":
         print("Essa tarefa já foi concluída.")
-    else:
-        tarefas[escolha - 1]["status"] = "Concluída"
-        print("Tarefa concluída com sucesso!")
+        return
+
+    tarefas[indice]["status"] = "Concluída"
+    print("Tarefa concluída com sucesso!")
 
 
 def excluir_tarefa(tarefas):
@@ -61,24 +76,22 @@ def excluir_tarefa(tarefas):
         return
 
     visualizar_tarefas(tarefas)
+    indice = solicitar_indice_tarefa(
+        tarefas,
+        "Digite o número da tarefa que deseja excluir: "
+    )
 
-    try:
-        escolha = int(input("Digite o número da tarefa que deseja excluir: "))
-    except ValueError:
-        print("Digite um número válido.")
+    if indice is None:
         return
 
-    if escolha < 1 or escolha > len(tarefas):
-        print("Opção inválida!")
-    else:
-        tarefas.pop(escolha - 1)
-        print("Tarefa excluída com sucesso!")
+    tarefas.pop(indice)
+    print("Tarefa excluída com sucesso!")
 
 
 def exibir_menu():
     print("\n===== MENU =====")
     print("1 - Adicionar tarefa")
-    print("2 - Visualizar tarefa")
+    print("2 - Visualizar tarefas")
     print("3 - Concluir tarefa")
     print("4 - Excluir tarefa")
     print("5 - Sair")
@@ -89,7 +102,7 @@ def main():
 
     while True:
         exibir_menu()
-        opcao = input("Escolha uma opção: ")
+        opcao = input("Escolha uma opção: ").strip()
 
         if opcao == "1":
             adicionar_tarefa(tarefas)
