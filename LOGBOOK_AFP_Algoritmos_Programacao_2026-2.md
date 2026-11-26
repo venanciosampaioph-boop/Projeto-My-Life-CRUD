@@ -740,13 +740,20 @@ A escolha de utilizar listas e dicionários para organizar as tarefas do MyLife.
 </details>
 
 #### Registro do Ciclo 12 — 11/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+
+1. **Desafio do ciclo (em 1 frase):** Analisar a qualidade e a organização de um código CRUD, observando a divisão em funções, a reutilização de código, o escopo das variáveis e a validação das entradas.
+
+2. **O que implementei (commits / arquivos / links):** Neste ciclo, não há registro de uma nova refatoração no meu próprio arquivo `CRUD.py`. A atividade documentada foi a revisão por pares do CRUD de Pedro Lucas Pereira Rolim, na branch `ciclo-3-funções`, commit [`00bbbbe`](https://github.com/pedruck9-crypto/algoritmos-e-programacao/commit/00bbbbe474090dd676a4c4db600d374acc4421a7). A análise está registrada no Campo 05 deste Logbook.
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Qualidade de código; modularização; definição e responsabilidade das funções; reutilização de código; escopo de variáveis; validação de entradas; consistência da saída; análise estática de código.
+
+4. **Desvio ou erro encontrado + causa técnica:** Não foi registrado erro de execução no meu próprio projeto durante este ciclo. Na revisão do código do colega, foram identificados pontos de atenção: uso de variável global, listas paralelas que dependem do alinhamento dos índices, validações que podem ser ampliadas e diferenças na apresentação dos resultados. A análise dessa versão foi estática, sem execução de testes nela.
+
+5. **Decisão de ajuste + fonte:** Registrei recomendações para reduzir dependências de variáveis globais, evitar listas paralelas quando uma estrutura única puder relacionar os dados, padronizar a saída e ampliar as validações. Essas recomendações foram baseadas na inspeção do commit revisado e nos conceitos de definição de funções da [documentação oficial do Python](https://docs.python.org/3/tutorial/controlflow.html#defining-functions). Não registrei essas recomendações como alterações já feitas no meu código.
+
+6. **Feedback recebido e o que mudei:** Não há feedback específico recebido sobre uma refatoração do meu próprio CRUD neste ciclo. O feedback que produzi foi destinado ao autor do código revisado e está documentado no Campo 05; por isso, não atribuo essas sugestões a mudanças já realizadas no MyLife.
+
+7. **Próximo passo:** Aplicar os critérios observados na revisão ao meu próprio CRUD em uma próxima etapa, avaliando nomes, responsabilidades das funções, repetição de código, escopo das variáveis e validação das entradas. Depois, executar testes e registrar somente as melhorias realmente realizadas.
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares (revisão nº 2)
 
