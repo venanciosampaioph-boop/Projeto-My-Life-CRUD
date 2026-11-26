@@ -117,7 +117,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 05 — Revisão por pares nº 1 e nº 2 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 06 — Próximos passos | 26/11 | ✅ | ✅ |
-| 3 | Campo 07 — Evolução conceitual | 26/11 | ⬜ | ⬜ |
+| 3 | Campo 07 — Evolução conceitual | 26/11 | ✅ | ✅ |
 | 🏁 | Defesa Técnica | 18/11 | ⬜ | — |
 
 ---
@@ -821,34 +821,33 @@ Em 23/11/2026, foi baixada e executada localmente uma versão posterior da API, 
 ### 🧩 CAMPO 07 — Evolução conceitual
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
 
-*Evidência rastreável de aprendizagem entre o início e o encerramento do ciclo AFP.*
+**7a. O que eu pensava no início do ciclo (com base no Campo 01):**
 
-**7a. O que eu pensava no início do ciclo (com base no Campo 01 — registrar a hipótese inicial e os objetos de conhecimento que achava conhecer):**
+No início da disciplina, eu já tinha conhecimentos básicos sobre variáveis, tipos de dados e estruturas condicionais. Também conhecia os comandos `print()` e `input()` e já havia realizado exercícios de lógica de programação envolvendo cálculo de média e a fórmula de Bhaskara. Porém, precisava aperfeiçoar o uso das estruturas condicionais, aprender a utilizar laços de repetição e desenvolver melhor a organização da lógica para controlar as opções do menu do MyLife. Minha principal expectativa era conseguir transformar os conhecimentos teóricos em um programa funcional em Python.
 
-> _…_
-
-**7b. O que aprendi — conceitos, princípios ou relações técnicas que não dominava no início e que agora consigo explicar com precisão (mínimo 3 objetos de conhecimento):**
+**7b. O que aprendi — conceitos, princípios ou relações técnicas que não dominava no início (mínimo 3 objetos de conhecimento):**
 
 | OBJETO DE CONHECIMENTO | O QUE EU NÃO DOMINAVA | O QUE APRENDI E CONSIGO DEMONSTRAR | EVIDÊNCIA (campo do Logbook onde aparece) |
 |---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
+| Laços de repetição (`for` e `while`) | Não sabia utilizar esses laços e não tinha uma compreensão clara da diferença entre eles. | Aprendi a utilizar o `while` para manter o menu em execução até a opção de sair e o `for` para percorrer os elementos de uma lista. | Registro do Ciclo 06 — uso de `while` e `break`; Registro do Ciclo 07 — iteração com `for`. |
+| Listas e dicionários | Não sabia utilizar essas estruturas para armazenar várias tarefas e organizar as informações de cada uma. | Aprendi a armazenar várias tarefas em uma lista e utilizar dicionários com chaves como `descricao` e `status` para organizar os dados individuais. Também aprendi a consultar e alterar valores por meio das chaves, embora ainda precise praticar para fazer isso com mais autonomia. | Registros dos Ciclos 07 e 08; Campo 03, itens 3a e 3b; Campo 06, itens 6a e 6b. |
+| Funções e recursividade | Não sabia criar funções utilizando `def` e ainda não dominava a organização do programa em partes menores. | Aprendi a separar as operações do MyLife em funções, utilizar parâmetros e organizar o fluxo principal com `main()`. Também implementei uma função recursiva para exibir as tarefas, utilizando uma condição de parada e o avanço do índice. | Registro do Ciclo 10 — modularização; Registro do Ciclo 11 — implementação de `exibir_tarefas_recursivo()` no arquivo `CRUD.py`. |
 
-**7c. Conceitos que precisei corrigir ao longo do ciclo — onde eu estava equivocado e o que o corrigiu (Fechamento Teórico, pesquisa, Peer Review, arguição):**
+**7c. Conceitos que precisei corrigir ao longo do ciclo — onde estava a dificuldade e o que a corrigiu:**
 
-1. **Equívoco:** _…_ — **Correção:** _…_
-   **O que corrigiu:** _…_
-2. **Equívoco:** _…_ — **Correção:** _…_
-   **O que corrigiu:** _…_
+1. **Dificuldade:** Não tinha uma ideia clara da diferença entre os laços `for` e `while`. **Correção:** Compreendi que o `for` percorre elementos de uma sequência, enquanto o `while` repete instruções enquanto uma condição for verdadeira.  
+   **O que corrigiu:** As explicações dos conteúdos e a prática nos exercícios e no próprio MyLife, especialmente ao utilizar o `while` no menu e o `for` para percorrer a lista de tarefas.
 
-**7d. Transferência — como este aprendizado se aplica a um contexto diferente do problema trabalhado (ao menos 1 exemplo concreto da área de formação):**
+2. **Dificuldade:** Tinha dificuldade para organizar a indentação das estruturas condicionais, principalmente para identificar a qual `if` um `else` pertencia. **Correção:** Aprendi que a indentação delimita os blocos de código e determina quais instruções pertencem a cada estrutura condicional.  
+   **O que corrigiu:** A prática de escrever e reorganizar o código, os testes no terminal e as explicações utilizadas para esclarecer dúvidas sobre `if`, `elif` e `else`, conforme registrado nos Ciclos 04 e 05.
 
-> _…_
+**7d. Transferência — aplicação do aprendizado em um contexto diferente do MyLife:**
+
+Eu poderia aplicar os conhecimentos adquiridos em um sistema de cadastro de alunos. Utilizaria listas e dicionários para armazenar informações como nome, matrícula e notas de cada aluno. As estruturas condicionais poderiam verificar situações como aprovação ou reprovação, enquanto os laços de repetição permitiriam percorrer os cadastros e apresentar os resultados. Assim, aplicaria os mesmos conceitos de organização e manipulação de dados aprendidos no desenvolvimento do MyLife em outro tipo de sistema.
 
 **7e. Avaliação honesta do próprio percurso — o que ainda não domino e preciso aprofundar após este ciclo:**
 
-> _…_
+Considero que evoluí durante a disciplina e consegui aplicar diversos conceitos no desenvolvimento do MyLife. Mesmo assim, ainda preciso aprofundar meus conhecimentos em funções, recursividade e dicionários. Tenho principalmente dificuldade em escrever, sem ajuda, códigos para acessar e modificar os valores armazenados nos dicionários, além de precisar praticar mais a criação e a organização de funções. Pretendo continuar resolvendo exercícios e aplicando esses conteúdos no projeto para desenvolver mais autonomia e compreender melhor a lógica por trás do código.
 
 ---
 
