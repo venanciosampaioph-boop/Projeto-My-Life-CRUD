@@ -893,8 +893,8 @@ Considero que evoluí durante a disciplina e consegui aplicar diversos conceitos
 
 | | |
 |---|---|
-| **Nome** | _…_ |
-| **Curso / Time / Função** | _…_ |
+| **Nome** | Pedro Henrique Venancio Sampaio |
+| **Curso / Time / Função** | Engenharia de Software , 2º período / Projeto individual / Autor do CRUD My Life |
 
 <details>
 <summary>🔒 Uso do professor — rubrica completa</summary>
