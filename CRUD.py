@@ -14,14 +14,23 @@ def adicionar_tarefa(tarefas):
         print("Tarefa adicionada com sucesso!")
 
 
+def exibir_tarefas_recursivo(tarefas, indice=0):
+    if indice == len(tarefas):
+        return
+
+    tarefa = tarefas[indice]
+
+    print(indice + 1, "-", tarefa["descricao"], "-", tarefa["status"])
+
+    exibir_tarefas_recursivo(tarefas, indice + 1)
+
+
 def visualizar_tarefas(tarefas):
     if not tarefas:
         print("Nenhuma tarefa cadastrada.")
     else:
         print("\n==== TAREFAS ====")
-
-        for indice, tarefa in enumerate(tarefas, start=1):
-            print(indice, "-", tarefa["descricao"], "-", tarefa["status"])
+        exibir_tarefas_recursivo(tarefas)
 
 
 def concluir_tarefa(tarefas):
