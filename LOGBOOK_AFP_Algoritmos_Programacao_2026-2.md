@@ -656,13 +656,15 @@ Fonte de apoio: ChatGPT, utilizado para esclarecer dúvidas sobre indentação e
 </details>
 
 #### Registro do Ciclo 10 — 28/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+*Atividade prática realizada e registro complementado em 25/11/2026.*
+
+1. **Desafio do ciclo (em 1 frase):** Organizar o código do MyLife em funções menores, separando cada operação para facilitar a leitura e a manutenção do programa.
+2. **O que implementei (commits / arquivos / links):** Refatorei o arquivo `CRUD.py`, criando as funções `adicionar_tarefa()`, `visualizar_tarefas()`, `concluir_tarefa()`, `excluir_tarefa()`, `exibir_menu()` e `main()`. A lista de tarefas é criada em `main()` e passada como argumento às funções que precisam utilizá-la. [Ver commit da modularização](https://github.com/venanciosampaioph-boop/Projeto-My-Life-CRUD/commit/40d4f34510cac427ffe781bac575b9a3783191e8).
+3. **Objeto(s) de conhecimento mobilizado(s):** Definição de funções com `def`, parâmetros, argumentos, escopo de variáveis, chamadas de funções, estruturas condicionais, laços de repetição e organização do fluxo principal com `main()`.
+4. **Desvio ou erro encontrado + causa técnica:** Antes da refatoração, todas as operações estavam concentradas no laço principal do programa. Isso deixava o fluxo mais extenso e dificultava localizar cada responsabilidade. Não registrei um erro específico de execução durante esta refatoração.
+5. **Decisão de ajuste + fonte:** Separei cada operação em uma função e mantive a lista `tarefas` em `main()`, passando-a como parâmetro para as funções. Também reutilizei `visualizar_tarefas()` nas operações de concluir e excluir, evitando repetir o mesmo trecho de listagem. Referência: [documentação oficial do Python — definição de funções](https://docs.python.org/3/tutorial/controlflow.html#defining-functions).
+6. **Feedback recebido e o que mudei:** Não tenho um feedback específico de colega sobre esta refatoração para registrar. As mudanças foram feitas a partir da reorganização do próprio código e da separação das responsabilidades.
+7. **Próximo passo:** Praticar a criação de funções com parâmetros e valores de retorno (`return`), além de aprender a identificar melhor quando uma variável deve ser local ou passada como argumento.
 
 ## 🔵 CICLO 11 — 04/11 — Recursividade
 
